@@ -124,7 +124,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2014-02-16" "gcc-4.9.0" "GNU"
+.TH GCC 1 "2014-02-25" "gcc-4.9.0" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -791,6 +791,7 @@ in the following sections.
 \&\fB\-mdsp  \-mno\-dsp  \-mdspr2  \-mno\-dspr2 
 \&\-mmcu \-mmno\-mcu 
 \&\-meva \-mno\-eva 
+\&\-mvirt \-mno\-virt 
 \&\-mmicromips \-mno\-micromips 
 \&\-mfpu=\fR\fIfpu-type\fR 
 \&\fB\-msmartmips  \-mno\-smartmips 
@@ -1023,7 +1024,8 @@ See \s-1RS/6000\s0 and PowerPC Options.
 \&\fB\-Qy  \-Qn  \-YP,\fR\fIpaths\fR  \fB\-Ym,\fR\fIdir\fR
 .Sp
 \&\fITILE-Gx Options\fR
-\&\fB\-mcpu=\fR\fIcpu\fR \fB\-m32 \-m64 \-mcmodel=\fR\fIcode-model\fR
+\&\fB\-mcpu=CPU \-m32 \-m64 \-mbig\-endian \-mlittle\-endian 
+\&\-mcmodel=\fR\fIcode-model\fR
 .Sp
 \&\fITILEPro Options\fR
 \&\fB\-mcpu=\fR\fIcpu\fR \fB\-m32\fR
@@ -16367,6 +16369,13 @@ Use (do not use) the \s-1MIPS\s0 \s-1MCU\s0 \s-1ASE\s0 instructions.
 .IX Item "-mno-eva"
 .PD
 Use (do not use) the \s-1MIPS\s0 Enhanced Virtual Addressing instructions.
+.IP "\fB\-mvirt\fR" 4
+.IX Item "-mvirt"
+.PD 0
+.IP "\fB\-mno\-virt\fR" 4
+.IX Item "-mno-virt"
+.PD
+Use (do not use) the \s-1MIPS\s0 Virtualization Application Specific instructions.
 .IP "\fB\-mlong64\fR" 4
 .IX Item "-mlong64"
 Force \f(CW\*(C`long\*(C'\fR types to be 64 bits wide.  See \fB\-mlong32\fR for
@@ -20134,6 +20143,13 @@ type is \fBtilegx\fR.
 Generate code for a 32\-bit or 64\-bit environment.  The 32\-bit
 environment sets int, long, and pointer to 32 bits.  The 64\-bit
 environment sets int to 32 bits and long and pointer to 64 bits.
+.IP "\fB\-mbig\-endian\fR" 4
+.IX Item "-mbig-endian"
+.PD 0
+.IP "\fB\-mlittle\-endian\fR" 4
+.IX Item "-mlittle-endian"
+.PD
+Generate code in big/little endian mode, respectively.
 .PP
 \fITILEPro Options\fR
 .IX Subsection "TILEPro Options"

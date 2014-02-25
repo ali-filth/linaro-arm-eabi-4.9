@@ -3696,8 +3696,14 @@ The C6X family of processors. This port requires binutils-2.22 or newer.
 tilegx-*-linux*
 ===============
 
-The TILE-Gx processor running GNU/Linux.  This port requires
-binutils-2.22 or newer.
+The TILE-Gx processor in little endian mode, running GNU/Linux.  This
+port requires binutils-2.22 or newer.
+
+tilegxbe-*-linux*
+=================
+
+The TILE-Gx processor in big endian mode, running GNU/Linux.  This port
+requires binutils-2.23 or newer.
 
 tilepro-*-linux*
 ================
@@ -4671,21 +4677,22 @@ Ref: sparc64-x-solaris2156823
 Ref: sparcv9-x-solaris2157476
 Ref: c6x-x-x157563
 Ref: tilegx-*-linux157654
-Ref: tilepro-*-linux157773
-Ref: x-x-vxworks157894
-Ref: x86-64-x-x159416
-Ref: x86-64-x-solaris210159744
-Ref: xtensa-x-elf160406
-Ref: xtensa-x-linux161077
-Ref: windows161418
-Ref: x-x-cygwin163355
-Ref: x-x-interix163908
-Ref: x-x-mingw32164217
-Ref: older164443
-Ref: elf166560
-Node: Old166818
-Node: Configurations169955
-Node: GNU Free Documentation License173496
-Node: Concept Index198643
+Ref: tilegxbe-*-linux157796
+Ref: tilepro-*-linux157939
+Ref: x-x-vxworks158060
+Ref: x86-64-x-x159582
+Ref: x86-64-x-solaris210159910
+Ref: xtensa-x-elf160572
+Ref: xtensa-x-linux161243
+Ref: windows161584
+Ref: x-x-cygwin163521
+Ref: x-x-interix164074
+Ref: x-x-mingw32164383
+Ref: older164609
+Ref: elf166726
+Node: Old166984
+Node: Configurations170121
+Node: GNU Free Documentation License173662
+Node: Concept Index198809
 
 End Tag Table
