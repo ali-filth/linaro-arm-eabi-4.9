@@ -3778,6 +3778,7 @@ struct GTY(()) cl_optimization
   signed char x_flag_ipa_sem_equality;
   signed char x_flag_ipa_sra;
   signed char x_flag_ira_hoist_pressure;
+  signed char x_flag_ira_loop_pressure;
   signed char x_flag_isolate_erroneous_paths_attribute;
   signed char x_flag_isolate_erroneous_paths_dereference;
   signed char x_flag_ivopts;
@@ -5284,53 +5285,55 @@ enum opt_code
   /* OPT_std_c__03 = 1169, */                /* -std=c++03 */
   /* OPT_std_c__0x = 1170, */                /* -std=c++0x */
   OPT_std_c__11 = 1171,                      /* -std=c++11 */
-  OPT_std_c__1y = 1172,                      /* -std=c++1y */
-  OPT_std_c__98 = 1173,                      /* -std=c++98 */
-  OPT_std_c11 = 1174,                        /* -std=c11 */
-  /* OPT_std_c1x = 1175, */                  /* -std=c1x */
-  /* OPT_std_c89 = 1176, */                  /* -std=c89 */
-  OPT_std_c90 = 1177,                        /* -std=c90 */
-  OPT_std_c99 = 1178,                        /* -std=c99 */
-  /* OPT_std_c9x = 1179, */                  /* -std=c9x */
-  OPT_std_f2003 = 1180,                      /* -std=f2003 */
-  OPT_std_f2008 = 1181,                      /* -std=f2008 */
-  OPT_std_f2008ts = 1182,                    /* -std=f2008ts */
-  OPT_std_f95 = 1183,                        /* -std=f95 */
-  OPT_std_gnu = 1184,                        /* -std=gnu */
-  /* OPT_std_gnu__03 = 1185, */              /* -std=gnu++03 */
-  /* OPT_std_gnu__0x = 1186, */              /* -std=gnu++0x */
-  OPT_std_gnu__11 = 1187,                    /* -std=gnu++11 */
-  OPT_std_gnu__1y = 1188,                    /* -std=gnu++1y */
-  OPT_std_gnu__98 = 1189,                    /* -std=gnu++98 */
-  OPT_std_gnu11 = 1190,                      /* -std=gnu11 */
-  /* OPT_std_gnu1x = 1191, */                /* -std=gnu1x */
-  /* OPT_std_gnu89 = 1192, */                /* -std=gnu89 */
-  OPT_std_gnu90 = 1193,                      /* -std=gnu90 */
-  OPT_std_gnu99 = 1194,                      /* -std=gnu99 */
-  /* OPT_std_gnu9x = 1195, */                /* -std=gnu9x */
-  /* OPT_std_iso9899_1990 = 1196, */         /* -std=iso9899:1990 */
-  OPT_std_iso9899_199409 = 1197,             /* -std=iso9899:199409 */
-  /* OPT_std_iso9899_1999 = 1198, */         /* -std=iso9899:1999 */
-  /* OPT_std_iso9899_199x = 1199, */         /* -std=iso9899:199x */
-  /* OPT_std_iso9899_2011 = 1200, */         /* -std=iso9899:2011 */
-  OPT_std_legacy = 1201,                     /* -std=legacy */
-  OPT_symbolic = 1202,                       /* -symbolic */
-  OPT_t = 1203,                              /* -t */
-  OPT_time = 1204,                           /* -time */
-  OPT_time_ = 1205,                          /* -time= */
-  OPT_tno_android_cc = 1206,                 /* -tno-android-cc */
-  OPT_tno_android_ld = 1207,                 /* -tno-android-ld */
-  OPT_traditional = 1208,                    /* -traditional */
-  OPT_traditional_cpp = 1209,                /* -traditional-cpp */
-  OPT_trigraphs = 1210,                      /* -trigraphs */
-  OPT_u = 1211,                              /* -u */
-  OPT_undef = 1212,                          /* -undef */
-  OPT_v = 1213,                              /* -v */
-  OPT_version = 1214,                        /* -version */
-  OPT_w = 1215,                              /* -w */
-  OPT_wrapper = 1216,                        /* -wrapper */
-  OPT_x = 1217,                              /* -x */
-  OPT_z = 1218,                              /* -z */
+  /* OPT_std_c__14 = 1172, */                /* -std=c++14 */
+  OPT_std_c__1y = 1173,                      /* -std=c++1y */
+  OPT_std_c__98 = 1174,                      /* -std=c++98 */
+  OPT_std_c11 = 1175,                        /* -std=c11 */
+  /* OPT_std_c1x = 1176, */                  /* -std=c1x */
+  /* OPT_std_c89 = 1177, */                  /* -std=c89 */
+  OPT_std_c90 = 1178,                        /* -std=c90 */
+  OPT_std_c99 = 1179,                        /* -std=c99 */
+  /* OPT_std_c9x = 1180, */                  /* -std=c9x */
+  OPT_std_f2003 = 1181,                      /* -std=f2003 */
+  OPT_std_f2008 = 1182,                      /* -std=f2008 */
+  OPT_std_f2008ts = 1183,                    /* -std=f2008ts */
+  OPT_std_f95 = 1184,                        /* -std=f95 */
+  OPT_std_gnu = 1185,                        /* -std=gnu */
+  /* OPT_std_gnu__03 = 1186, */              /* -std=gnu++03 */
+  /* OPT_std_gnu__0x = 1187, */              /* -std=gnu++0x */
+  OPT_std_gnu__11 = 1188,                    /* -std=gnu++11 */
+  /* OPT_std_gnu__14 = 1189, */              /* -std=gnu++14 */
+  OPT_std_gnu__1y = 1190,                    /* -std=gnu++1y */
+  OPT_std_gnu__98 = 1191,                    /* -std=gnu++98 */
+  OPT_std_gnu11 = 1192,                      /* -std=gnu11 */
+  /* OPT_std_gnu1x = 1193, */                /* -std=gnu1x */
+  /* OPT_std_gnu89 = 1194, */                /* -std=gnu89 */
+  OPT_std_gnu90 = 1195,                      /* -std=gnu90 */
+  OPT_std_gnu99 = 1196,                      /* -std=gnu99 */
+  /* OPT_std_gnu9x = 1197, */                /* -std=gnu9x */
+  /* OPT_std_iso9899_1990 = 1198, */         /* -std=iso9899:1990 */
+  OPT_std_iso9899_199409 = 1199,             /* -std=iso9899:199409 */
+  /* OPT_std_iso9899_1999 = 1200, */         /* -std=iso9899:1999 */
+  /* OPT_std_iso9899_199x = 1201, */         /* -std=iso9899:199x */
+  /* OPT_std_iso9899_2011 = 1202, */         /* -std=iso9899:2011 */
+  OPT_std_legacy = 1203,                     /* -std=legacy */
+  OPT_symbolic = 1204,                       /* -symbolic */
+  OPT_t = 1205,                              /* -t */
+  OPT_time = 1206,                           /* -time */
+  OPT_time_ = 1207,                          /* -time= */
+  OPT_tno_android_cc = 1208,                 /* -tno-android-cc */
+  OPT_tno_android_ld = 1209,                 /* -tno-android-ld */
+  OPT_traditional = 1210,                    /* -traditional */
+  OPT_traditional_cpp = 1211,                /* -traditional-cpp */
+  OPT_trigraphs = 1212,                      /* -trigraphs */
+  OPT_u = 1213,                              /* -u */
+  OPT_undef = 1214,                          /* -undef */
+  OPT_v = 1215,                              /* -v */
+  OPT_version = 1216,                        /* -version */
+  OPT_w = 1217,                              /* -w */
+  OPT_wrapper = 1218,                        /* -wrapper */
+  OPT_x = 1219,                              /* -x */
+  OPT_z = 1220,                              /* -z */
   N_OPTS,
   OPT_SPECIAL_unknown,
   OPT_SPECIAL_ignore,

@@ -124,7 +124,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2014-02-25" "gcc-4.9.0" "GNU"
+.TH GCC 1 "2014-03-12" "gcc-4.9.0" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -679,7 +679,7 @@ in the following sections.
 \&\fB\-mvzeroupper \-mprefer\-avx128 
 \&\-mmmx  \-msse  \-msse2 \-msse3 \-mssse3 \-msse4.1 \-msse4.2 \-msse4 \-mavx 
 \&\-mavx2 \-mavx512f \-mavx512pf \-mavx512er \-mavx512cd \-msha 
-\&\-maes \-mpclmul \-mfsgsbase \-mrdrnd \-mf16c \-mfma 
+\&\-maes \-mpclmul \-mfsgsbase \-mrdrnd \-mf16c \-mfma \-mprefetchwt1 
 \&\-msse4a \-m3dnow \-mpopcnt \-mabm \-mbmi \-mtbm \-mfma4 \-mxop \-mlzcnt 
 \&\-mbmi2 \-mfxsr \-mxsave \-mxsaveopt \-mrtm \-mlwp \-mthreads 
 \&\-mno\-align\-stringops  \-minline\-all\-stringops 
@@ -1731,8 +1731,7 @@ additional defect reports. Same as \fB\-ansi\fR for \*(C+ code.
 .IP "\fBc++0x\fR" 4
 .IX Item "c++0x"
 .PD
-The 2011 \s-1ISO\s0 \*(C+ standard plus amendments.  Support for \*(C+11 is still
-experimental, and may change in incompatible ways in future releases.
+The 2011 \s-1ISO\s0 \*(C+ standard plus amendments.
 The name \fBc++0x\fR is deprecated.
 .IP "\fBgnu++11\fR" 4
 .IX Item "gnu++11"
@@ -1740,8 +1739,7 @@ The name \fBc++0x\fR is deprecated.
 .IP "\fBgnu++0x\fR" 4
 .IX Item "gnu++0x"
 .PD
-\&\s-1GNU\s0 dialect of \fB\-std=c++11\fR. Support for \*(C+11 is still
-experimental, and may change in incompatible ways in future releases.
+\&\s-1GNU\s0 dialect of \fB\-std=c++11\fR.
 The name \fBgnu++0x\fR is deprecated.
 .IP "\fBc++1y\fR" 4
 .IX Item "c++1y"
@@ -1880,12 +1878,11 @@ are ignored.
 Enable the usage of Cilk Plus language extension features for C/\*(C+.
 When the option \fB\-fcilkplus\fR is specified, enable the usage of
 the Cilk Plus Language extension features for C/\*(C+.  The present
-implementation follows \s-1ABI\s0 version 0.9.  This is an experimental
+implementation follows \s-1ABI\s0 version 1.2.  This is an experimental
 feature that is only partially complete, and whose interface may
 change in future versions of \s-1GCC\s0 as the official specification
-changes.  Currently only the array notation feature of the language
-specification has been implemented.  More features will be implemented
-in subsequent release cycles.
+changes.  Currently, all features but \f(CW\*(C`_Cilk_for\*(C'\fR have been
+implemented.
 .IP "\fB\-fgnu\-tm\fR" 4
 .IX Item "-fgnu-tm"
 When the option \fB\-fgnu\-tm\fR is specified, the compiler
@@ -11676,7 +11673,7 @@ The default for this option is@tie{}\f(CW\*(C`avr2\*(C'\fR.
 .el .IP "\f(CWavrxmega2\fR" 4
 .IX Item "avrxmega2"
 \&\*(L"\s-1XMEGA\s0\*(R" devices with more than 8@tie{}KiB and up to 64@tie{}KiB of program memory.
-\&\fImcu\fR\f(CW@tie\fR{}= \f(CW\*(C`atmxt112sl\*(C'\fR, \f(CW\*(C`atmxt224\*(C'\fR, \f(CW\*(C`atmxt224e\*(C'\fR, \f(CW\*(C`atmxt336s\*(C'\fR, \f(CW\*(C`atxmega16a4\*(C'\fR, \f(CW\*(C`atxmega16a4u\*(C'\fR, \f(CW\*(C`atxmega16c4\*(C'\fR, \f(CW\*(C`atxmega16d4\*(C'\fR, \f(CW\*(C`atxmega16x1\*(C'\fR, \f(CW\*(C`atxmega32a4\*(C'\fR, \f(CW\*(C`atxmega32a4u\*(C'\fR, \f(CW\*(C`atxmega32c4\*(C'\fR, \f(CW\*(C`atxmega32d4\*(C'\fR, \f(CW\*(C`atxmega32e5\*(C'\fR, \f(CW\*(C`atxmega32x1\*(C'\fR.
+\&\fImcu\fR\f(CW@tie\fR{}= \f(CW\*(C`atmxt112sl\*(C'\fR, \f(CW\*(C`atmxt224\*(C'\fR, \f(CW\*(C`atmxt224e\*(C'\fR, \f(CW\*(C`atmxt336s\*(C'\fR, \f(CW\*(C`atxmega16a4\*(C'\fR, \f(CW\*(C`atxmega16a4u\*(C'\fR, \f(CW\*(C`atxmega16c4\*(C'\fR, \f(CW\*(C`atxmega16d4\*(C'\fR, \f(CW\*(C`atxmega32a4\*(C'\fR, \f(CW\*(C`atxmega32a4u\*(C'\fR, \f(CW\*(C`atxmega32c4\*(C'\fR, \f(CW\*(C`atxmega32d4\*(C'\fR, \f(CW\*(C`atxmega32e5\*(C'\fR, \f(CW\*(C`atxmega32x1\*(C'\fR.
 .ie n .IP """avrxmega4""" 4
 .el .IP "\f(CWavrxmega4\fR" 4
 .IX Item "avrxmega4"
@@ -14300,6 +14297,10 @@ preferred alignment to \fB\-mpreferred\-stack\-boundary=2\fR.
 .IX Item "-mfma"
 .IP "\fB\-mno\-fma\fR" 4
 .IX Item "-mno-fma"
+.IP "\fB\-mprefetchwt1\fR" 4
+.IX Item "-mprefetchwt1"
+.IP "\fB\-mno\-prefetchwt1\fR" 4
+.IX Item "-mno-prefetchwt1"
 .IP "\fB\-msse4a\fR" 4
 .IX Item "-msse4a"
 .IP "\fB\-mno\-sse4a\fR" 4
@@ -17100,17 +17101,24 @@ post\- fixed with \f(CW\*(C`_\|_\*(C'\fR.  This in turn will be used by the
 \&\f(CW\*(C`msp430.h\*(C'\fR header file to select an \s-1MCU\s0 specific supplimentary
 header file.
 .Sp
-In addition two scripts will be added to the linker command line:
-\&\f(CW\*(C`memory.ld\*(C'\fR and \f(CW\*(C`peripherals.ld\*(C'\fR, with a search path based
-upon the \s-1MCU\s0 name.
+The option also sets the \s-1ISA\s0 to use.  If the \s-1MCU\s0 name is one that is
+known to only support the 430 \s-1ISA\s0 then that is selected, otherwise the
+430X \s-1ISA\s0 is selected.  A generic \s-1MCU\s0 name of \f(CW\*(C`msp430\*(C'\fR can also be
+used to select the 430 \s-1ISA\s0.  Similarly the generic \f(CW\*(C`msp430x\*(C'\fR \s-1MCU\s0
+name will select the 430X \s-1ISA\s0.
+.Sp
+In addition an \s-1MCU\s0 specific linker script will be added to the linker
+command line.  The script's name is the name of the \s-1MCU\s0 with
+\&\f(CW\*(C`.ld\*(C'\fR appended.  Thus specifying \fB\-mmcu=xxx\fR on the gcc
+command line will define the C preprocessor symbol \f(CW\*(C`_\|_XXX_\|_\*(C'\fR and
+cause the linker to search for a script called \fIxxx.ld\fR.
 .Sp
 This option is also passed on to the assembler.
 .IP "\fB\-mcpu=\fR" 4
 .IX Item "-mcpu="
-Specific the \s-1ISA\s0 to use.  Accepted values are \f(CW\*(C`msp430\*(C'\fR,
-\&\f(CW\*(C`msp430x\*(C'\fR and \f(CW\*(C`msp430xv2\*(C'\fR.  This option is needed in order
-to ensure that the correct instructions are generated and that the
-correct libraries are linked in.
+Specifies the \s-1ISA\s0 to use.  Accepted values are \f(CW\*(C`msp430\*(C'\fR,
+\&\f(CW\*(C`msp430x\*(C'\fR and \f(CW\*(C`msp430xv2\*(C'\fR.  This option is deprecated.  The
+\&\fB\-mmcu=\fR option should be used to select the \s-1ISA\s0.
 .IP "\fB\-msim\fR" 4
 .IX Item "-msim"
 Link to the simulator runtime libraries and linker script.  Overrides

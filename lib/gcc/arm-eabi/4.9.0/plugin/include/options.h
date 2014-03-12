@@ -3766,6 +3766,7 @@ struct GTY(()) cl_optimization
   signed char x_flag_ipa_sem_equality;
   signed char x_flag_ipa_sra;
   signed char x_flag_ira_hoist_pressure;
+  signed char x_flag_ira_loop_pressure;
   signed char x_flag_isolate_erroneous_paths_attribute;
   signed char x_flag_isolate_erroneous_paths_dereference;
   signed char x_flag_ivopts;
@@ -5261,51 +5262,53 @@ enum opt_code
   /* OPT_std_c__03 = 1161, */                /* -std=c++03 */
   /* OPT_std_c__0x = 1162, */                /* -std=c++0x */
   OPT_std_c__11 = 1163,                      /* -std=c++11 */
-  OPT_std_c__1y = 1164,                      /* -std=c++1y */
-  OPT_std_c__98 = 1165,                      /* -std=c++98 */
-  OPT_std_c11 = 1166,                        /* -std=c11 */
-  /* OPT_std_c1x = 1167, */                  /* -std=c1x */
-  /* OPT_std_c89 = 1168, */                  /* -std=c89 */
-  OPT_std_c90 = 1169,                        /* -std=c90 */
-  OPT_std_c99 = 1170,                        /* -std=c99 */
-  /* OPT_std_c9x = 1171, */                  /* -std=c9x */
-  OPT_std_f2003 = 1172,                      /* -std=f2003 */
-  OPT_std_f2008 = 1173,                      /* -std=f2008 */
-  OPT_std_f2008ts = 1174,                    /* -std=f2008ts */
-  OPT_std_f95 = 1175,                        /* -std=f95 */
-  OPT_std_gnu = 1176,                        /* -std=gnu */
-  /* OPT_std_gnu__03 = 1177, */              /* -std=gnu++03 */
-  /* OPT_std_gnu__0x = 1178, */              /* -std=gnu++0x */
-  OPT_std_gnu__11 = 1179,                    /* -std=gnu++11 */
-  OPT_std_gnu__1y = 1180,                    /* -std=gnu++1y */
-  OPT_std_gnu__98 = 1181,                    /* -std=gnu++98 */
-  OPT_std_gnu11 = 1182,                      /* -std=gnu11 */
-  /* OPT_std_gnu1x = 1183, */                /* -std=gnu1x */
-  /* OPT_std_gnu89 = 1184, */                /* -std=gnu89 */
-  OPT_std_gnu90 = 1185,                      /* -std=gnu90 */
-  OPT_std_gnu99 = 1186,                      /* -std=gnu99 */
-  /* OPT_std_gnu9x = 1187, */                /* -std=gnu9x */
-  /* OPT_std_iso9899_1990 = 1188, */         /* -std=iso9899:1990 */
-  OPT_std_iso9899_199409 = 1189,             /* -std=iso9899:199409 */
-  /* OPT_std_iso9899_1999 = 1190, */         /* -std=iso9899:1999 */
-  /* OPT_std_iso9899_199x = 1191, */         /* -std=iso9899:199x */
-  /* OPT_std_iso9899_2011 = 1192, */         /* -std=iso9899:2011 */
-  OPT_std_legacy = 1193,                     /* -std=legacy */
-  OPT_symbolic = 1194,                       /* -symbolic */
-  OPT_t = 1195,                              /* -t */
-  OPT_time = 1196,                           /* -time */
-  OPT_time_ = 1197,                          /* -time= */
-  OPT_traditional = 1198,                    /* -traditional */
-  OPT_traditional_cpp = 1199,                /* -traditional-cpp */
-  OPT_trigraphs = 1200,                      /* -trigraphs */
-  OPT_u = 1201,                              /* -u */
-  OPT_undef = 1202,                          /* -undef */
-  OPT_v = 1203,                              /* -v */
-  OPT_version = 1204,                        /* -version */
-  OPT_w = 1205,                              /* -w */
-  OPT_wrapper = 1206,                        /* -wrapper */
-  OPT_x = 1207,                              /* -x */
-  OPT_z = 1208,                              /* -z */
+  /* OPT_std_c__14 = 1164, */                /* -std=c++14 */
+  OPT_std_c__1y = 1165,                      /* -std=c++1y */
+  OPT_std_c__98 = 1166,                      /* -std=c++98 */
+  OPT_std_c11 = 1167,                        /* -std=c11 */
+  /* OPT_std_c1x = 1168, */                  /* -std=c1x */
+  /* OPT_std_c89 = 1169, */                  /* -std=c89 */
+  OPT_std_c90 = 1170,                        /* -std=c90 */
+  OPT_std_c99 = 1171,                        /* -std=c99 */
+  /* OPT_std_c9x = 1172, */                  /* -std=c9x */
+  OPT_std_f2003 = 1173,                      /* -std=f2003 */
+  OPT_std_f2008 = 1174,                      /* -std=f2008 */
+  OPT_std_f2008ts = 1175,                    /* -std=f2008ts */
+  OPT_std_f95 = 1176,                        /* -std=f95 */
+  OPT_std_gnu = 1177,                        /* -std=gnu */
+  /* OPT_std_gnu__03 = 1178, */              /* -std=gnu++03 */
+  /* OPT_std_gnu__0x = 1179, */              /* -std=gnu++0x */
+  OPT_std_gnu__11 = 1180,                    /* -std=gnu++11 */
+  /* OPT_std_gnu__14 = 1181, */              /* -std=gnu++14 */
+  OPT_std_gnu__1y = 1182,                    /* -std=gnu++1y */
+  OPT_std_gnu__98 = 1183,                    /* -std=gnu++98 */
+  OPT_std_gnu11 = 1184,                      /* -std=gnu11 */
+  /* OPT_std_gnu1x = 1185, */                /* -std=gnu1x */
+  /* OPT_std_gnu89 = 1186, */                /* -std=gnu89 */
+  OPT_std_gnu90 = 1187,                      /* -std=gnu90 */
+  OPT_std_gnu99 = 1188,                      /* -std=gnu99 */
+  /* OPT_std_gnu9x = 1189, */                /* -std=gnu9x */
+  /* OPT_std_iso9899_1990 = 1190, */         /* -std=iso9899:1990 */
+  OPT_std_iso9899_199409 = 1191,             /* -std=iso9899:199409 */
+  /* OPT_std_iso9899_1999 = 1192, */         /* -std=iso9899:1999 */
+  /* OPT_std_iso9899_199x = 1193, */         /* -std=iso9899:199x */
+  /* OPT_std_iso9899_2011 = 1194, */         /* -std=iso9899:2011 */
+  OPT_std_legacy = 1195,                     /* -std=legacy */
+  OPT_symbolic = 1196,                       /* -symbolic */
+  OPT_t = 1197,                              /* -t */
+  OPT_time = 1198,                           /* -time */
+  OPT_time_ = 1199,                          /* -time= */
+  OPT_traditional = 1200,                    /* -traditional */
+  OPT_traditional_cpp = 1201,                /* -traditional-cpp */
+  OPT_trigraphs = 1202,                      /* -trigraphs */
+  OPT_u = 1203,                              /* -u */
+  OPT_undef = 1204,                          /* -undef */
+  OPT_v = 1205,                              /* -v */
+  OPT_version = 1206,                        /* -version */
+  OPT_w = 1207,                              /* -w */
+  OPT_wrapper = 1208,                        /* -wrapper */
+  OPT_x = 1209,                              /* -x */
+  OPT_z = 1210,                              /* -z */
   N_OPTS,
   OPT_SPECIAL_unknown,
   OPT_SPECIAL_ignore,
