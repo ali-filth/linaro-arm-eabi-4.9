@@ -4,8 +4,8 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "4.9.0 20140312 (experimental)")
-(!srcdir  "/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc")
+(!version  "4.9.0 20140329 (experimental)")
+(!srcdir  "../.././../gcc/gcc-UBER/gcc")
 (!languages 9 ada c cp fortran go java lto objc objcp)
 (!fileslist 189
  (!srcfile 511  "../libcpp/include/line-map.h")
@@ -226,7 +226,7 @@
         (!type union 7 
          (!type already_seen 5)
          gc_pointed_to "tree_node"
-         (!srcfileloc  "tree-core.h" 1623)
+         (!srcfileloc  "tree-core.h" 1626)
          (!fields 38 
           (!pair  "base"
            (!type struct 8 nil  gc_used "tree_base"
@@ -309,11 +309,11 @@
               (!srcfileloc  "tree-core.h" 729)
               nil )
              (!pair  "u"
-              (!type union 12 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/tree-core.h:731"
+              (!type union 12 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/tree-core.h:731"
                (!srcfileloc  "tree-core.h" 765)
                (!fields 3 
                 (!pair  "bits"
-                 (!type struct 13 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/tree-core.h:734"
+                 (!type struct 13 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/tree-core.h:734"
                   (!srcfileloc  "tree-core.h" 757)
                   (!fields 16 
                    (!pair  "lang_flag_0"
@@ -401,75 +401,75 @@
              )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1581)
+           (!srcfileloc  "tree-core.h" 1584)
            (!options 
             (!option tag string  "TS_BASE")
            )
           )
           (!pair  "typed"
            (!type struct 14 nil  gc_used "tree_typed"
-            (!srcfileloc  "tree-core.h" 1039)
+            (!srcfileloc  "tree-core.h" 1042)
             (!fields 2 
              (!pair  "base"
               (!type already_seen 8)
-              (!srcfileloc  "tree-core.h" 1037)
+              (!srcfileloc  "tree-core.h" 1040)
               nil )
              (!pair  "type"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1038)
+              (!srcfileloc  "tree-core.h" 1041)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1582)
+           (!srcfileloc  "tree-core.h" 1585)
            (!options 
             (!option tag string  "TS_TYPED")
            )
           )
           (!pair  "common"
            (!type struct 15 nil  gc_used "tree_common"
-            (!srcfileloc  "tree-core.h" 1044)
+            (!srcfileloc  "tree-core.h" 1047)
             (!fields 2 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1042)
+              (!srcfileloc  "tree-core.h" 1045)
               nil )
              (!pair  "chain"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1043)
+              (!srcfileloc  "tree-core.h" 1046)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1583)
+           (!srcfileloc  "tree-core.h" 1586)
            (!options 
             (!option tag string  "TS_COMMON")
            )
           )
           (!pair  "int_cst"
            (!type struct 16 nil  gc_used "tree_int_cst"
-            (!srcfileloc  "tree-core.h" 1049)
+            (!srcfileloc  "tree-core.h" 1052)
             (!fields 2 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1047)
+              (!srcfileloc  "tree-core.h" 1050)
               nil )
              (!pair  "int_cst"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1048)
+              (!srcfileloc  "tree-core.h" 1051)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1584)
+           (!srcfileloc  "tree-core.h" 1587)
            (!options 
             (!option tag string  "TS_INT_CST")
            )
           )
           (!pair  "real_cst"
            (!type struct 17 nil  gc_used "tree_real_cst"
-            (!srcfileloc  "tree-core.h" 1055)
+            (!srcfileloc  "tree-core.h" 1058)
             (!fields 2 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1053)
+              (!srcfileloc  "tree-core.h" 1056)
               nil )
              (!pair  "real_cst_ptr"
               (!type pointer 18 nil  gc_used
@@ -511,22 +511,22 @@
                 )
                 nil 511 nil nil )
               )
-              (!srcfileloc  "tree-core.h" 1054)
+              (!srcfileloc  "tree-core.h" 1057)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1585)
+           (!srcfileloc  "tree-core.h" 1588)
            (!options 
             (!option tag string  "TS_REAL_CST")
            )
           )
           (!pair  "fixed_cst"
            (!type struct 21 nil  gc_used "tree_fixed_cst"
-            (!srcfileloc  "tree-core.h" 1060)
+            (!srcfileloc  "tree-core.h" 1063)
             (!fields 2 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1058)
+              (!srcfileloc  "tree-core.h" 1061)
               nil )
              (!pair  "fixed_cst_ptr"
               (!type pointer 22 nil  gc_used
@@ -546,50 +546,50 @@
                 )
                 nil 511 nil nil )
               )
-              (!srcfileloc  "tree-core.h" 1059)
+              (!srcfileloc  "tree-core.h" 1062)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1586)
+           (!srcfileloc  "tree-core.h" 1589)
            (!options 
             (!option tag string  "TS_FIXED_CST")
            )
           )
           (!pair  "vector"
            (!type struct 24 nil  gc_used "tree_vector"
-            (!srcfileloc  "tree-core.h" 1077)
+            (!srcfileloc  "tree-core.h" 1080)
             (!fields 2 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1075)
+              (!srcfileloc  "tree-core.h" 1078)
               nil )
              (!pair  "elts"
               (!type array 25 nil  gc_used "1" 
                (!type already_seen 5)
               )
-              (!srcfileloc  "tree-core.h" 1076)
+              (!srcfileloc  "tree-core.h" 1079)
               (!options 
                (!option length string  "TYPE_VECTOR_SUBPARTS (TREE_TYPE ((tree)&%h))")
               )
              )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1587)
+           (!srcfileloc  "tree-core.h" 1590)
            (!options 
             (!option tag string  "TS_VECTOR")
            )
           )
           (!pair  "string"
            (!type struct 26 nil  gc_used "tree_string"
-            (!srcfileloc  "tree-core.h" 1066)
+            (!srcfileloc  "tree-core.h" 1069)
             (!fields 3 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1063)
+              (!srcfileloc  "tree-core.h" 1066)
               nil )
              (!pair  "length"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1064)
+              (!srcfileloc  "tree-core.h" 1067)
               nil )
              (!pair  "str"
               (!type array 27 nil  gc_used "1" 
@@ -603,45 +603,45 @@
                 )
                 gc_used)
               )
-              (!srcfileloc  "tree-core.h" 1065)
+              (!srcfileloc  "tree-core.h" 1068)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1588)
+           (!srcfileloc  "tree-core.h" 1591)
            (!options 
             (!option tag string  "TS_STRING")
            )
           )
           (!pair  "complex"
            (!type struct 31 nil  gc_used "tree_complex"
-            (!srcfileloc  "tree-core.h" 1072)
+            (!srcfileloc  "tree-core.h" 1075)
             (!fields 3 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1069)
+              (!srcfileloc  "tree-core.h" 1072)
               nil )
              (!pair  "real"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1070)
+              (!srcfileloc  "tree-core.h" 1073)
               nil )
              (!pair  "imag"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1071)
+              (!srcfileloc  "tree-core.h" 1074)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1589)
+           (!srcfileloc  "tree-core.h" 1592)
            (!options 
             (!option tag string  "TS_COMPLEX")
            )
           )
           (!pair  "identifier"
            (!type struct 32 nil  gc_used "tree_identifier"
-            (!srcfileloc  "tree-core.h" 1082)
+            (!srcfileloc  "tree-core.h" 1085)
             (!fields 2 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1080)
+              (!srcfileloc  "tree-core.h" 1083)
               nil )
              (!pair  "id"
               (!type struct 33 
@@ -669,185 +669,185 @@
                  nil )
                )
                nil 511 nil nil )
-              (!srcfileloc  "tree-core.h" 1081)
+              (!srcfileloc  "tree-core.h" 1084)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1590)
+           (!srcfileloc  "tree-core.h" 1593)
            (!options 
             (!option tag string  "TS_IDENTIFIER")
            )
           )
           (!pair  "decl_minimal"
            (!type struct 37 nil  gc_used "tree_decl_minimal"
-            (!srcfileloc  "tree-core.h" 1311)
+            (!srcfileloc  "tree-core.h" 1314)
             (!fields 5 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1306)
+              (!srcfileloc  "tree-core.h" 1309)
               nil )
              (!pair  "locus"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1307)
+              (!srcfileloc  "tree-core.h" 1310)
               nil )
              (!pair  "uid"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1308)
+              (!srcfileloc  "tree-core.h" 1311)
               nil )
              (!pair  "name"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1309)
+              (!srcfileloc  "tree-core.h" 1312)
               nil )
              (!pair  "context"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1310)
+              (!srcfileloc  "tree-core.h" 1313)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1591)
+           (!srcfileloc  "tree-core.h" 1594)
            (!options 
             (!option tag string  "TS_DECL_MINIMAL")
            )
           )
           (!pair  "decl_common"
            (!type struct 38 nil  gc_used "tree_decl_common"
-            (!srcfileloc  "tree-core.h" 1377)
+            (!srcfileloc  "tree-core.h" 1380)
             (!fields 35 
              (!pair  "common"
               (!type already_seen 37)
-              (!srcfileloc  "tree-core.h" 1314)
+              (!srcfileloc  "tree-core.h" 1317)
               nil )
              (!pair  "size"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1315)
+              (!srcfileloc  "tree-core.h" 1318)
               nil )
              (!pair  "mode"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1317)
+              (!srcfileloc  "tree-core.h" 1320)
               nil )
              (!pair  "nonlocal_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1319)
+              (!srcfileloc  "tree-core.h" 1322)
               nil )
              (!pair  "virtual_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1320)
+              (!srcfileloc  "tree-core.h" 1323)
               nil )
              (!pair  "ignored_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1321)
+              (!srcfileloc  "tree-core.h" 1324)
               nil )
              (!pair  "abstract_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1322)
+              (!srcfileloc  "tree-core.h" 1325)
               nil )
              (!pair  "artificial_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1323)
+              (!srcfileloc  "tree-core.h" 1326)
               nil )
              (!pair  "preserve_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1324)
+              (!srcfileloc  "tree-core.h" 1327)
               nil )
              (!pair  "debug_expr_is_from"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1325)
+              (!srcfileloc  "tree-core.h" 1328)
               nil )
              (!pair  "lang_flag_0"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1327)
+              (!srcfileloc  "tree-core.h" 1330)
               nil )
              (!pair  "lang_flag_1"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1328)
+              (!srcfileloc  "tree-core.h" 1331)
               nil )
              (!pair  "lang_flag_2"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1329)
+              (!srcfileloc  "tree-core.h" 1332)
               nil )
              (!pair  "lang_flag_3"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1330)
+              (!srcfileloc  "tree-core.h" 1333)
               nil )
              (!pair  "lang_flag_4"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1331)
+              (!srcfileloc  "tree-core.h" 1334)
               nil )
              (!pair  "lang_flag_5"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1332)
+              (!srcfileloc  "tree-core.h" 1335)
               nil )
              (!pair  "lang_flag_6"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1333)
+              (!srcfileloc  "tree-core.h" 1336)
               nil )
              (!pair  "lang_flag_7"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1334)
+              (!srcfileloc  "tree-core.h" 1337)
               nil )
              (!pair  "lang_flag_8"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1335)
+              (!srcfileloc  "tree-core.h" 1338)
               nil )
              (!pair  "decl_flag_0"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1338)
+              (!srcfileloc  "tree-core.h" 1341)
               nil )
              (!pair  "decl_flag_1"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1342)
+              (!srcfileloc  "tree-core.h" 1345)
               nil )
              (!pair  "decl_flag_2"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1346)
+              (!srcfileloc  "tree-core.h" 1349)
               nil )
              (!pair  "decl_flag_3"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1348)
+              (!srcfileloc  "tree-core.h" 1351)
               nil )
              (!pair  "gimple_reg_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1351)
+              (!srcfileloc  "tree-core.h" 1354)
               nil )
              (!pair  "decl_by_reference_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1353)
+              (!srcfileloc  "tree-core.h" 1356)
               nil )
              (!pair  "decl_read_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1355)
+              (!srcfileloc  "tree-core.h" 1358)
               nil )
              (!pair  "decl_nonshareable_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1357)
+              (!srcfileloc  "tree-core.h" 1360)
               nil )
              (!pair  "off_align"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1360)
+              (!srcfileloc  "tree-core.h" 1363)
               nil )
              (!pair  "align"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1365)
+              (!srcfileloc  "tree-core.h" 1368)
               nil )
              (!pair  "pt_uid"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1368)
+              (!srcfileloc  "tree-core.h" 1371)
               nil )
              (!pair  "size_unit"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1370)
+              (!srcfileloc  "tree-core.h" 1373)
               nil )
              (!pair  "initial"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1371)
+              (!srcfileloc  "tree-core.h" 1374)
               nil )
              (!pair  "attributes"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1372)
+              (!srcfileloc  "tree-core.h" 1375)
               nil )
              (!pair  "abstract_origin"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1373)
+              (!srcfileloc  "tree-core.h" 1376)
               nil )
              (!pair  "lang_specific"
               (!type pointer 39 nil  gc_used
@@ -932,15 +932,15 @@
                            (!type user_struct 46 
                             (!type already_seen 45)
                             gc_pointed_to "vec<tree,va_gc>"
-                            (!srcfileloc  "tree-core.h" 1225)
+                            (!srcfileloc  "tree-core.h" 1228)
                             (!fields 2 
                              (!pair  "va_gc"
                               (!type already_seen 3)
-                              (!srcfileloc  "tree-core.h" 1225)
+                              (!srcfileloc  "tree-core.h" 1228)
                               nil )
                              (!pair  "tree"
                               (!type already_seen 5)
-                              (!srcfileloc  "tree-core.h" 1225)
+                              (!srcfileloc  "tree-core.h" 1228)
                               nil )
                             )
                            )
@@ -1803,8 +1803,8 @@
                                              (!type struct 95 
                                               (!type already_seen 94)
                                               gc_pointed_to "cp_binding_level"
-                                              (!srcfileloc  "cp/name-lookup.h" 259)
-                                              (!fields 19 
+                                              (!srcfileloc  "cp/name-lookup.h" 266)
+                                              (!fields 20 
                                                (!pair  "names"
                                                 (!type already_seen 5)
                                                 (!srcfileloc  "cp/name-lookup.h" 187)
@@ -1968,6 +1968,10 @@
                                                (!pair  "have_cleanups"
                                                 (!type already_seen 9)
                                                 (!srcfileloc  "cp/name-lookup.h" 256)
+                                                nil )
+                                               (!pair  "defining_class_p"
+                                                (!type already_seen 9)
+                                                (!srcfileloc  "cp/name-lookup.h" 263)
                                                 nil )
                                               )
                                               nil 260 nil nil )
@@ -2409,31 +2413,31 @@
                   nil )
                  
                  (!type struct 131 nil  gc_pointed_to "lang_decl"
-                  (!srcfileloc  "fortran/trans.h" 822)
+                  (!srcfileloc  "fortran/trans.h" 823)
                   (!fields 6 
                    (!pair  "saved_descriptor"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 812)
+                    (!srcfileloc  "fortran/trans.h" 813)
                     nil )
                    (!pair  "stringlen"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 817)
+                    (!srcfileloc  "fortran/trans.h" 818)
                     nil )
                    (!pair  "addr"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 818)
+                    (!srcfileloc  "fortran/trans.h" 819)
                     nil )
                    (!pair  "span"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 819)
+                    (!srcfileloc  "fortran/trans.h" 820)
                     nil )
                    (!pair  "token"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 821)
+                    (!srcfileloc  "fortran/trans.h" 822)
                     nil )
                    (!pair  "caf_offset"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 821)
+                    (!srcfileloc  "fortran/trans.h" 822)
                     nil )
                   )
                   (!options 
@@ -2490,22 +2494,22 @@
                 )
                )
               )
-              (!srcfileloc  "tree-core.h" 1376)
+              (!srcfileloc  "tree-core.h" 1379)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1592)
+           (!srcfileloc  "tree-core.h" 1595)
            (!options 
             (!option tag string  "TS_DECL_COMMON")
            )
           )
           (!pair  "decl_with_rtl"
            (!type struct 135 nil  gc_used "tree_decl_with_rtl"
-            (!srcfileloc  "tree-core.h" 1382)
+            (!srcfileloc  "tree-core.h" 1385)
             (!fields 2 
              (!pair  "common"
               (!type already_seen 38)
-              (!srcfileloc  "tree-core.h" 1380)
+              (!srcfileloc  "tree-core.h" 1383)
               nil )
              (!pair  "rtl"
               (!type pointer 136 
@@ -6595,7 +6599,7 @@
                                )
                               )
                               (!pair  "x"
-                               (!type struct 321 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/basic-block.h:187"
+                               (!type struct 321 nil  gc_used "anonymous:../.././../gcc/gcc-UBER/gcc/basic-block.h:187"
                                 (!srcfileloc  "basic-block.h" 190)
                                 (!fields 2 
                                  (!pair  "head_"
@@ -7390,289 +7394,289 @@
                 )
                 511 nil nil )
               )
-              (!srcfileloc  "tree-core.h" 1381)
+              (!srcfileloc  "tree-core.h" 1384)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1593)
+           (!srcfileloc  "tree-core.h" 1596)
            (!options 
             (!option tag string  "TS_DECL_WRTL")
            )
           )
           (!pair  "decl_non_common"
            (!type struct 339 nil  gc_used "tree_decl_non_common"
-            (!srcfileloc  "tree-core.h" 1465)
+            (!srcfileloc  "tree-core.h" 1468)
             (!fields 5 
              (!pair  "common"
               (!type struct 340 nil  gc_used "tree_decl_with_vis"
-               (!srcfileloc  "tree-core.h" 1449)
+               (!srcfileloc  "tree-core.h" 1452)
                (!fields 22 
                 (!pair  "common"
                  (!type already_seen 135)
-                 (!srcfileloc  "tree-core.h" 1414)
+                 (!srcfileloc  "tree-core.h" 1417)
                  nil )
                 (!pair  "assembler_name"
                  (!type already_seen 5)
-                 (!srcfileloc  "tree-core.h" 1415)
+                 (!srcfileloc  "tree-core.h" 1418)
                  nil )
                 (!pair  "section_name"
                  (!type already_seen 5)
-                 (!srcfileloc  "tree-core.h" 1416)
+                 (!srcfileloc  "tree-core.h" 1419)
                  nil )
                 (!pair  "comdat_group"
                  (!type already_seen 5)
-                 (!srcfileloc  "tree-core.h" 1417)
+                 (!srcfileloc  "tree-core.h" 1420)
                  nil )
                 (!pair  "defer_output"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1420)
+                 (!srcfileloc  "tree-core.h" 1423)
                  nil )
                 (!pair  "hard_register"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1421)
+                 (!srcfileloc  "tree-core.h" 1424)
                  nil )
                 (!pair  "common_flag"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1422)
+                 (!srcfileloc  "tree-core.h" 1425)
                  nil )
                 (!pair  "in_text_section"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1423)
+                 (!srcfileloc  "tree-core.h" 1426)
                  nil )
                 (!pair  "in_constant_pool"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1424)
+                 (!srcfileloc  "tree-core.h" 1427)
                  nil )
                 (!pair  "dllimport_flag"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1425)
+                 (!srcfileloc  "tree-core.h" 1428)
                  nil )
                 (!pair  "weak_flag"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1427)
+                 (!srcfileloc  "tree-core.h" 1430)
                  nil )
                 (!pair  "implicit_section_name_p"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1429)
+                 (!srcfileloc  "tree-core.h" 1432)
                  nil )
                 (!pair  "seen_in_bind_expr"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1431)
+                 (!srcfileloc  "tree-core.h" 1434)
                  nil )
                 (!pair  "comdat_flag"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1432)
+                 (!srcfileloc  "tree-core.h" 1435)
                  nil )
                 (!pair  "visibility"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1433)
+                 (!srcfileloc  "tree-core.h" 1436)
                  nil )
                 (!pair  "visibility_specified"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1434)
+                 (!srcfileloc  "tree-core.h" 1437)
                  nil )
                 (!pair  "tls_model"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1436)
+                 (!srcfileloc  "tree-core.h" 1439)
                  nil )
                 (!pair  "init_priority_p"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1439)
+                 (!srcfileloc  "tree-core.h" 1442)
                  nil )
                 (!pair  "shadowed_for_var_p"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1441)
+                 (!srcfileloc  "tree-core.h" 1444)
                  nil )
                 (!pair  "cxx_constructor"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1443)
+                 (!srcfileloc  "tree-core.h" 1446)
                  nil )
                 (!pair  "cxx_destructor"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1445)
+                 (!srcfileloc  "tree-core.h" 1448)
                  nil )
                 (!pair  "final"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1447)
+                 (!srcfileloc  "tree-core.h" 1450)
                  nil )
                )
                nil 511 nil nil )
-              (!srcfileloc  "tree-core.h" 1456)
+              (!srcfileloc  "tree-core.h" 1459)
               nil )
              (!pair  "saved_tree"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1458)
+              (!srcfileloc  "tree-core.h" 1461)
               nil )
              (!pair  "arguments"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1460)
+              (!srcfileloc  "tree-core.h" 1463)
               nil )
              (!pair  "result"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1462)
+              (!srcfileloc  "tree-core.h" 1465)
               nil )
              (!pair  "vindex"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1464)
+              (!srcfileloc  "tree-core.h" 1467)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1595)
+           (!srcfileloc  "tree-core.h" 1598)
            (!options 
             (!option tag string  "TS_DECL_NON_COMMON")
            )
           )
           (!pair  "parm_decl"
            (!type struct 341 nil  gc_used "tree_parm_decl"
-            (!srcfileloc  "tree-core.h" 1411)
+            (!srcfileloc  "tree-core.h" 1414)
             (!fields 2 
              (!pair  "common"
               (!type already_seen 135)
-              (!srcfileloc  "tree-core.h" 1409)
+              (!srcfileloc  "tree-core.h" 1412)
               nil )
              (!pair  "incoming_rtl"
               (!type already_seen 136)
-              (!srcfileloc  "tree-core.h" 1410)
+              (!srcfileloc  "tree-core.h" 1413)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1596)
+           (!srcfileloc  "tree-core.h" 1599)
            (!options 
             (!option tag string  "TS_PARM_DECL")
            )
           )
           (!pair  "decl_with_vis"
            (!type already_seen 340)
-           (!srcfileloc  "tree-core.h" 1597)
+           (!srcfileloc  "tree-core.h" 1600)
            (!options 
             (!option tag string  "TS_DECL_WITH_VIS")
            )
           )
           (!pair  "var_decl"
            (!type struct 342 nil  gc_used "tree_var_decl"
-            (!srcfileloc  "tree-core.h" 1453)
+            (!srcfileloc  "tree-core.h" 1456)
             (!fields 1 
              (!pair  "common"
               (!type already_seen 340)
-              (!srcfileloc  "tree-core.h" 1452)
+              (!srcfileloc  "tree-core.h" 1455)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1598)
+           (!srcfileloc  "tree-core.h" 1601)
            (!options 
             (!option tag string  "TS_VAR_DECL")
            )
           )
           (!pair  "field_decl"
            (!type struct 343 nil  gc_used "tree_field_decl"
-            (!srcfileloc  "tree-core.h" 1392)
+            (!srcfileloc  "tree-core.h" 1395)
             (!fields 6 
              (!pair  "common"
               (!type already_seen 38)
-              (!srcfileloc  "tree-core.h" 1385)
+              (!srcfileloc  "tree-core.h" 1388)
               nil )
              (!pair  "offset"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1387)
+              (!srcfileloc  "tree-core.h" 1390)
               nil )
              (!pair  "bit_field_type"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1388)
+              (!srcfileloc  "tree-core.h" 1391)
               nil )
              (!pair  "qualifier"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1389)
+              (!srcfileloc  "tree-core.h" 1392)
               nil )
              (!pair  "bit_offset"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1390)
+              (!srcfileloc  "tree-core.h" 1393)
               nil )
              (!pair  "fcontext"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1391)
+              (!srcfileloc  "tree-core.h" 1394)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1599)
+           (!srcfileloc  "tree-core.h" 1602)
            (!options 
             (!option tag string  "TS_FIELD_DECL")
            )
           )
           (!pair  "label_decl"
            (!type struct 344 nil  gc_used "tree_label_decl"
-            (!srcfileloc  "tree-core.h" 1398)
+            (!srcfileloc  "tree-core.h" 1401)
             (!fields 3 
              (!pair  "common"
               (!type already_seen 135)
-              (!srcfileloc  "tree-core.h" 1395)
+              (!srcfileloc  "tree-core.h" 1398)
               nil )
              (!pair  "label_decl_uid"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1396)
+              (!srcfileloc  "tree-core.h" 1399)
               nil )
              (!pair  "eh_landing_pad_nr"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1397)
+              (!srcfileloc  "tree-core.h" 1400)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1600)
+           (!srcfileloc  "tree-core.h" 1603)
            (!options 
             (!option tag string  "TS_LABEL_DECL")
            )
           )
           (!pair  "result_decl"
            (!type struct 345 nil  gc_used "tree_result_decl"
-            (!srcfileloc  "tree-core.h" 1402)
+            (!srcfileloc  "tree-core.h" 1405)
             (!fields 1 
              (!pair  "common"
               (!type already_seen 135)
-              (!srcfileloc  "tree-core.h" 1401)
+              (!srcfileloc  "tree-core.h" 1404)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1601)
+           (!srcfileloc  "tree-core.h" 1604)
            (!options 
             (!option tag string  "TS_RESULT_DECL")
            )
           )
           (!pair  "const_decl"
            (!type struct 346 nil  gc_used "tree_const_decl"
-            (!srcfileloc  "tree-core.h" 1406)
+            (!srcfileloc  "tree-core.h" 1409)
             (!fields 1 
              (!pair  "common"
               (!type already_seen 38)
-              (!srcfileloc  "tree-core.h" 1405)
+              (!srcfileloc  "tree-core.h" 1408)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1602)
+           (!srcfileloc  "tree-core.h" 1605)
            (!options 
             (!option tag string  "TS_CONST_DECL")
            )
           )
           (!pair  "type_decl"
            (!type struct 347 nil  gc_used "tree_type_decl"
-            (!srcfileloc  "tree-core.h" 1526)
+            (!srcfileloc  "tree-core.h" 1529)
             (!fields 1 
              (!pair  "common"
               (!type already_seen 339)
-              (!srcfileloc  "tree-core.h" 1524)
+              (!srcfileloc  "tree-core.h" 1527)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1603)
+           (!srcfileloc  "tree-core.h" 1606)
            (!options 
             (!option tag string  "TS_TYPE_DECL")
            )
           )
           (!pair  "function_decl"
            (!type struct 348 nil  gc_used "tree_function_decl"
-            (!srcfileloc  "tree-core.h" 1513)
+            (!srcfileloc  "tree-core.h" 1516)
             (!fields 26 
              (!pair  "common"
               (!type already_seen 339)
-              (!srcfileloc  "tree-core.h" 1473)
+              (!srcfileloc  "tree-core.h" 1476)
               nil )
              (!pair  "f"
               (!type pointer 349 nil  gc_used
@@ -8570,7 +8574,7 @@
                               (!srcfileloc  "dwarf2out.h" 55)
                               nil )
                              (!pair  "dw_cfi_oprnd1"
-                              (!type union 413 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/dwarf2out.h:47"
+                              (!type union 413 nil  gc_used "anonymous:../.././../gcc/gcc-UBER/gcc/dwarf2out.h:47"
                                (!srcfileloc  "dwarf2out.h" 52)
                                (!fields 4 
                                 (!pair  "dw_cfi_reg_num"
@@ -9314,299 +9318,299 @@
                 )
                 nil 511 nil nil )
               )
-              (!srcfileloc  "tree-core.h" 1475)
+              (!srcfileloc  "tree-core.h" 1478)
               nil )
              (!pair  "personality"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1478)
+              (!srcfileloc  "tree-core.h" 1481)
               nil )
              (!pair  "function_specific_target"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1481)
+              (!srcfileloc  "tree-core.h" 1484)
               nil )
              (!pair  "function_specific_optimization"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1482)
+              (!srcfileloc  "tree-core.h" 1485)
               nil )
              (!pair  "function_code"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1488)
+              (!srcfileloc  "tree-core.h" 1491)
               nil )
              (!pair  "built_in_class"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1489)
+              (!srcfileloc  "tree-core.h" 1492)
               nil )
              (!pair  "static_ctor_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1491)
+              (!srcfileloc  "tree-core.h" 1494)
               nil )
              (!pair  "static_dtor_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1492)
+              (!srcfileloc  "tree-core.h" 1495)
               nil )
              (!pair  "uninlinable"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1493)
+              (!srcfileloc  "tree-core.h" 1496)
               nil )
              (!pair  "possibly_inlined"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1495)
+              (!srcfileloc  "tree-core.h" 1498)
               nil )
              (!pair  "novops_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1496)
+              (!srcfileloc  "tree-core.h" 1499)
               nil )
              (!pair  "returns_twice_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1497)
+              (!srcfileloc  "tree-core.h" 1500)
               nil )
              (!pair  "malloc_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1498)
+              (!srcfileloc  "tree-core.h" 1501)
               nil )
              (!pair  "operator_new_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1499)
+              (!srcfileloc  "tree-core.h" 1502)
               nil )
              (!pair  "declared_inline_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1500)
+              (!srcfileloc  "tree-core.h" 1503)
               nil )
              (!pair  "regdecl_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1501)
+              (!srcfileloc  "tree-core.h" 1504)
               nil )
              (!pair  "no_inline_warning_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1502)
+              (!srcfileloc  "tree-core.h" 1505)
               nil )
              (!pair  "no_instrument_function_entry_exit"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1504)
+              (!srcfileloc  "tree-core.h" 1507)
               nil )
              (!pair  "no_limit_stack"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1505)
+              (!srcfileloc  "tree-core.h" 1508)
               nil )
              (!pair  "disregard_inline_limits"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1506)
+              (!srcfileloc  "tree-core.h" 1509)
               nil )
              (!pair  "pure_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1507)
+              (!srcfileloc  "tree-core.h" 1510)
               nil )
              (!pair  "looping_const_or_pure_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1508)
+              (!srcfileloc  "tree-core.h" 1511)
               nil )
              (!pair  "has_debug_args_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1509)
+              (!srcfileloc  "tree-core.h" 1512)
               nil )
              (!pair  "tm_clone_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1510)
+              (!srcfileloc  "tree-core.h" 1513)
               nil )
              (!pair  "versioned_function"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1511)
+              (!srcfileloc  "tree-core.h" 1514)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1604)
+           (!srcfileloc  "tree-core.h" 1607)
            (!options 
             (!option tag string  "TS_FUNCTION_DECL")
            )
           )
           (!pair  "translation_unit_decl"
            (!type struct 443 nil  gc_used "tree_translation_unit_decl"
-            (!srcfileloc  "tree-core.h" 1521)
+            (!srcfileloc  "tree-core.h" 1524)
             (!fields 2 
              (!pair  "common"
               (!type already_seen 38)
-              (!srcfileloc  "tree-core.h" 1516)
+              (!srcfileloc  "tree-core.h" 1519)
               nil )
              (!pair  "language"
               (!type already_seen 36)
-              (!srcfileloc  "tree-core.h" 1518)
+              (!srcfileloc  "tree-core.h" 1521)
               (!options 
                (!option skip string  "")
               )
              )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1606)
+           (!srcfileloc  "tree-core.h" 1609)
            (!options 
             (!option tag string  "TS_TRANSLATION_UNIT_DECL")
            )
           )
           (!pair  "type_common"
            (!type struct 444 nil  gc_used "tree_type_common"
-            (!srcfileloc  "tree-core.h" 1273)
+            (!srcfileloc  "tree-core.h" 1276)
             (!fields 30 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1235)
+              (!srcfileloc  "tree-core.h" 1238)
               nil )
              (!pair  "size"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1236)
+              (!srcfileloc  "tree-core.h" 1239)
               nil )
              (!pair  "size_unit"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1237)
+              (!srcfileloc  "tree-core.h" 1240)
               nil )
              (!pair  "attributes"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1238)
+              (!srcfileloc  "tree-core.h" 1241)
               nil )
              (!pair  "uid"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1239)
+              (!srcfileloc  "tree-core.h" 1242)
               nil )
              (!pair  "precision"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1241)
+              (!srcfileloc  "tree-core.h" 1244)
               nil )
              (!pair  "no_force_blk_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1242)
+              (!srcfileloc  "tree-core.h" 1245)
               nil )
              (!pair  "needs_constructing_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1243)
+              (!srcfileloc  "tree-core.h" 1246)
               nil )
              (!pair  "transparent_aggr_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1244)
+              (!srcfileloc  "tree-core.h" 1247)
               nil )
              (!pair  "restrict_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1245)
+              (!srcfileloc  "tree-core.h" 1248)
               nil )
              (!pair  "contains_placeholder_bits"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1246)
+              (!srcfileloc  "tree-core.h" 1249)
               nil )
              (!pair  "mode"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1248)
+              (!srcfileloc  "tree-core.h" 1251)
               nil )
              (!pair  "string_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1250)
+              (!srcfileloc  "tree-core.h" 1253)
               nil )
              (!pair  "lang_flag_0"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1251)
+              (!srcfileloc  "tree-core.h" 1254)
               nil )
              (!pair  "lang_flag_1"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1252)
+              (!srcfileloc  "tree-core.h" 1255)
               nil )
              (!pair  "lang_flag_2"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1253)
+              (!srcfileloc  "tree-core.h" 1256)
               nil )
              (!pair  "lang_flag_3"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1254)
+              (!srcfileloc  "tree-core.h" 1257)
               nil )
              (!pair  "lang_flag_4"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1255)
+              (!srcfileloc  "tree-core.h" 1258)
               nil )
              (!pair  "lang_flag_5"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1256)
+              (!srcfileloc  "tree-core.h" 1259)
               nil )
              (!pair  "lang_flag_6"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1257)
+              (!srcfileloc  "tree-core.h" 1260)
               nil )
              (!pair  "align"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1259)
+              (!srcfileloc  "tree-core.h" 1262)
               nil )
              (!pair  "alias_set"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1260)
+              (!srcfileloc  "tree-core.h" 1263)
               nil )
              (!pair  "pointer_to"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1261)
+              (!srcfileloc  "tree-core.h" 1264)
               nil )
              (!pair  "reference_to"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1262)
+              (!srcfileloc  "tree-core.h" 1265)
               nil )
              (!pair  "symtab"
               (!type union 445 nil  gc_used "tree_type_symtab"
-               (!srcfileloc  "tree-core.h" 1267)
+               (!srcfileloc  "tree-core.h" 1270)
                (!fields 3 
                 (!pair  "address"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1264)
+                 (!srcfileloc  "tree-core.h" 1267)
                  (!options 
                   (!option tag string  "TYPE_SYMTAB_IS_ADDRESS")
                  )
                 )
                 (!pair  "pointer"
                  (!type already_seen 36)
-                 (!srcfileloc  "tree-core.h" 1265)
+                 (!srcfileloc  "tree-core.h" 1268)
                  (!options 
                   (!option tag string  "TYPE_SYMTAB_IS_POINTER")
                  )
                 )
                 (!pair  "die"
                  (!type already_seen 426)
-                 (!srcfileloc  "tree-core.h" 1266)
+                 (!srcfileloc  "tree-core.h" 1269)
                  (!options 
                   (!option tag string  "TYPE_SYMTAB_IS_DIE")
                  )
                 )
                )
                nil 511 nil )
-              (!srcfileloc  "tree-core.h" 1267)
+              (!srcfileloc  "tree-core.h" 1270)
               (!options 
                (!option desc string  "debug_hooks->tree_type_symtab_field")
               )
              )
-             (!pair  "name"
-              (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1268)
-              nil )
-             (!pair  "next_variant"
-              (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1269)
-              nil )
-             (!pair  "main_variant"
-              (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1270)
-              nil )
-             (!pair  "context"
+             (!pair  "canonical"
               (!type already_seen 5)
               (!srcfileloc  "tree-core.h" 1271)
               nil )
-             (!pair  "canonical"
+             (!pair  "next_variant"
               (!type already_seen 5)
               (!srcfileloc  "tree-core.h" 1272)
               nil )
+             (!pair  "main_variant"
+              (!type already_seen 5)
+              (!srcfileloc  "tree-core.h" 1273)
+              nil )
+             (!pair  "context"
+              (!type already_seen 5)
+              (!srcfileloc  "tree-core.h" 1274)
+              nil )
+             (!pair  "name"
+              (!type already_seen 5)
+              (!srcfileloc  "tree-core.h" 1275)
+              nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1607)
+           (!srcfileloc  "tree-core.h" 1610)
            (!options 
             (!option tag string  "TS_TYPE_COMMON")
            )
           )
           (!pair  "type_with_lang_specific"
            (!type struct 446 nil  gc_used "tree_type_with_lang_specific"
-            (!srcfileloc  "tree-core.h" 1279)
+            (!srcfileloc  "tree-core.h" 1282)
             (!fields 2 
              (!pair  "common"
               (!type already_seen 444)
-              (!srcfileloc  "tree-core.h" 1276)
+              (!srcfileloc  "tree-core.h" 1279)
               nil )
              (!pair  "lang_specific"
               (!type pointer 447 nil  gc_used
@@ -9921,27 +9925,27 @@
                      (!type user_struct 466 
                       (!type already_seen 465)
                       gc_pointed_to "vec<constructor_elt,va_gc>"
-                      (!srcfileloc  "tree-core.h" 1106)
+                      (!srcfileloc  "tree-core.h" 1109)
                       (!fields 2 
                        (!pair  "va_gc"
                         (!type already_seen 3)
-                        (!srcfileloc  "tree-core.h" 1106)
+                        (!srcfileloc  "tree-core.h" 1109)
                         nil )
                        (!pair  "constructor_elt"
                         (!type struct 467 nil  gc_used "constructor_elt"
-                         (!srcfileloc  "tree-core.h" 1106)
+                         (!srcfileloc  "tree-core.h" 1109)
                          (!fields 2 
                           (!pair  "index"
                            (!type already_seen 5)
-                           (!srcfileloc  "tree-core.h" 1100)
+                           (!srcfileloc  "tree-core.h" 1103)
                            nil )
                           (!pair  "value"
                            (!type already_seen 5)
-                           (!srcfileloc  "tree-core.h" 1101)
+                           (!srcfileloc  "tree-core.h" 1104)
                            nil )
                          )
                          nil 511 nil nil )
-                        (!srcfileloc  "tree-core.h" 1106)
+                        (!srcfileloc  "tree-core.h" 1109)
                         nil )
                       )
                      )
@@ -10062,75 +10066,75 @@
                   nil )
                  
                  (!type struct 473 nil  gc_pointed_to "lang_type"
-                  (!srcfileloc  "fortran/trans.h" 808)
+                  (!srcfileloc  "fortran/trans.h" 809)
                   (!fields 15 
                    (!pair  "rank"
                     (!type already_seen 9)
-                    (!srcfileloc  "fortran/trans.h" 794)
+                    (!srcfileloc  "fortran/trans.h" 795)
                     nil )
                    (!pair  "corank"
                     (!type already_seen 9)
-                    (!srcfileloc  "fortran/trans.h" 794)
+                    (!srcfileloc  "fortran/trans.h" 795)
                     nil )
                    (!pair  "akind"
                     (!type already_seen 9)
-                    (!srcfileloc  "fortran/trans.h" 795)
+                    (!srcfileloc  "fortran/trans.h" 796)
                     nil )
                    (!pair  "lbound"
                     (!type array 474 nil  gc_used "GFC_MAX_DIMENSIONS" 
                      (!type already_seen 5)
                     )
-                    (!srcfileloc  "fortran/trans.h" 796)
+                    (!srcfileloc  "fortran/trans.h" 797)
                     nil )
                    (!pair  "ubound"
                     (!type array 475 nil  gc_used "GFC_MAX_DIMENSIONS" 
                      (!type already_seen 5)
                     )
-                    (!srcfileloc  "fortran/trans.h" 797)
+                    (!srcfileloc  "fortran/trans.h" 798)
                     nil )
                    (!pair  "stride"
                     (!type array 476 nil  gc_used "GFC_MAX_DIMENSIONS" 
                      (!type already_seen 5)
                     )
-                    (!srcfileloc  "fortran/trans.h" 798)
+                    (!srcfileloc  "fortran/trans.h" 799)
                     nil )
                    (!pair  "size"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 799)
+                    (!srcfileloc  "fortran/trans.h" 800)
                     nil )
                    (!pair  "offset"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 800)
+                    (!srcfileloc  "fortran/trans.h" 801)
                     nil )
                    (!pair  "dtype"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 801)
+                    (!srcfileloc  "fortran/trans.h" 802)
                     nil )
                    (!pair  "dataptr_type"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 802)
+                    (!srcfileloc  "fortran/trans.h" 803)
                     nil )
                    (!pair  "span"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 803)
+                    (!srcfileloc  "fortran/trans.h" 804)
                     nil )
                    (!pair  "base_decl"
                     (!type array 477 nil  gc_used "2" 
                      (!type already_seen 5)
                     )
-                    (!srcfileloc  "fortran/trans.h" 804)
+                    (!srcfileloc  "fortran/trans.h" 805)
                     nil )
                    (!pair  "nonrestricted_type"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 805)
+                    (!srcfileloc  "fortran/trans.h" 806)
                     nil )
                    (!pair  "caf_token"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 806)
+                    (!srcfileloc  "fortran/trans.h" 807)
                     nil )
                    (!pair  "caf_offset"
                     (!type already_seen 5)
-                    (!srcfileloc  "fortran/trans.h" 807)
+                    (!srcfileloc  "fortran/trans.h" 808)
                     nil )
                   )
                   (!options 
@@ -10643,108 +10647,108 @@
                 )
                )
               )
-              (!srcfileloc  "tree-core.h" 1278)
+              (!srcfileloc  "tree-core.h" 1281)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1609)
+           (!srcfileloc  "tree-core.h" 1612)
            (!options 
             (!option tag string  "TS_TYPE_WITH_LANG_SPECIFIC")
            )
           )
           (!pair  "type_non_common"
            (!type struct 497 nil  gc_used "tree_type_non_common"
-            (!srcfileloc  "tree-core.h" 1287)
+            (!srcfileloc  "tree-core.h" 1290)
             (!fields 5 
              (!pair  "with_lang_specific"
               (!type already_seen 446)
-              (!srcfileloc  "tree-core.h" 1282)
+              (!srcfileloc  "tree-core.h" 1285)
               nil )
              (!pair  "values"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1283)
+              (!srcfileloc  "tree-core.h" 1286)
               nil )
              (!pair  "minval"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1284)
+              (!srcfileloc  "tree-core.h" 1287)
               nil )
              (!pair  "maxval"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1285)
+              (!srcfileloc  "tree-core.h" 1288)
               nil )
              (!pair  "binfo"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1286)
+              (!srcfileloc  "tree-core.h" 1289)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1611)
+           (!srcfileloc  "tree-core.h" 1614)
            (!options 
             (!option tag string  "TS_TYPE_NON_COMMON")
            )
           )
           (!pair  "list"
            (!type struct 498 nil  gc_used "tree_list"
-            (!srcfileloc  "tree-core.h" 1088)
+            (!srcfileloc  "tree-core.h" 1091)
             (!fields 3 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1085)
+              (!srcfileloc  "tree-core.h" 1088)
               nil )
              (!pair  "purpose"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1086)
+              (!srcfileloc  "tree-core.h" 1089)
               nil )
              (!pair  "value"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1087)
+              (!srcfileloc  "tree-core.h" 1090)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1612)
+           (!srcfileloc  "tree-core.h" 1615)
            (!options 
             (!option tag string  "TS_LIST")
            )
           )
           (!pair  "vec"
            (!type struct 499 nil  gc_used "tree_vec"
-            (!srcfileloc  "tree-core.h" 1093)
+            (!srcfileloc  "tree-core.h" 1096)
             (!fields 2 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1091)
+              (!srcfileloc  "tree-core.h" 1094)
               nil )
              (!pair  "a"
               (!type array 500 nil  gc_used "1" 
                (!type already_seen 5)
               )
-              (!srcfileloc  "tree-core.h" 1092)
+              (!srcfileloc  "tree-core.h" 1095)
               (!options 
                (!option length string  "TREE_VEC_LENGTH ((tree)&%h)")
               )
              )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1613)
+           (!srcfileloc  "tree-core.h" 1616)
            (!options 
             (!option tag string  "TS_VEC")
            )
           )
           (!pair  "exp"
            (!type struct 501 nil  gc_used "tree_exp"
-            (!srcfileloc  "tree-core.h" 1147)
+            (!srcfileloc  "tree-core.h" 1150)
             (!fields 3 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1142)
+              (!srcfileloc  "tree-core.h" 1145)
               nil )
              (!pair  "locus"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1143)
+              (!srcfileloc  "tree-core.h" 1146)
               nil )
              (!pair  "operands"
               (!type union 502 nil  gc_used "tree_exp_subunion"
-               (!srcfileloc  "tree-core.h" 1146)
+               (!srcfileloc  "tree-core.h" 1149)
                (!fields 1 
                 (!pair  ""
                  (!type array 503 nil  gc_used "1" 
@@ -10762,7 +10766,7 @@
                 (!option dot string  "")
                )
                511 nil )
-              (!srcfileloc  "tree-core.h" 1146)
+              (!srcfileloc  "tree-core.h" 1149)
               (!options 
                (!option desc string  "TREE_CODE ((tree) &%0)")
                (!option special string  "tree_exp")
@@ -10770,30 +10774,30 @@
              )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1614)
+           (!srcfileloc  "tree-core.h" 1617)
            (!options 
             (!option tag string  "TS_EXP")
            )
           )
           (!pair  "ssa_name"
            (!type struct 504 nil  gc_used "tree_ssa_name"
-            (!srcfileloc  "tree-core.h" 1183)
+            (!srcfileloc  "tree-core.h" 1186)
             (!fields 5 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1164)
+              (!srcfileloc  "tree-core.h" 1167)
               nil )
              (!pair  "var"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1167)
+              (!srcfileloc  "tree-core.h" 1170)
               nil )
              (!pair  "def_stmt"
               (!type already_seen 310)
-              (!srcfileloc  "tree-core.h" 1170)
+              (!srcfileloc  "tree-core.h" 1173)
               nil )
              (!pair  "info"
               (!type union 505 nil  gc_used "ssa_name_info_type"
-               (!srcfileloc  "tree-core.h" 1178)
+               (!srcfileloc  "tree-core.h" 1181)
                (!fields 2 
                 (!pair  "ptr_info"
                  (!type pointer 506 nil  gc_used
@@ -10817,7 +10821,7 @@
                    )
                    nil 511 nil nil )
                  )
-                 (!srcfileloc  "tree-core.h" 1175)
+                 (!srcfileloc  "tree-core.h" 1178)
                  (!options 
                   (!option tag string  "0")
                  )
@@ -10844,14 +10848,14 @@
                    )
                    nil 511 nil nil )
                  )
-                 (!srcfileloc  "tree-core.h" 1177)
+                 (!srcfileloc  "tree-core.h" 1180)
                  (!options 
                   (!option tag string  "1")
                  )
                 )
                )
                nil 511 nil )
-              (!srcfileloc  "tree-core.h" 1179)
+              (!srcfileloc  "tree-core.h" 1182)
               (!options 
                (!option desc string  "%1.typed.type ?!POINTER_TYPE_P (TREE_TYPE ((tree)&%1)) : 2")
               )
@@ -10866,191 +10870,191 @@
                (!fields 4 
                 (!pair  "prev"
                  (!type already_seen 511)
-                 (!srcfileloc  "tree-core.h" 1152)
+                 (!srcfileloc  "tree-core.h" 1155)
                  (!options 
                   (!option skip string  "")
                  )
                 )
                 (!pair  "next"
                  (!type already_seen 511)
-                 (!srcfileloc  "tree-core.h" 1153)
+                 (!srcfileloc  "tree-core.h" 1156)
                  (!options 
                   (!option skip string  "")
                  )
                 )
                 (!pair  "loc"
-                 (!type union 512 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/tree-core.h:1159"
-                  (!srcfileloc  "tree-core.h" 1159)
+                 (!type union 512 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/tree-core.h:1162"
+                  (!srcfileloc  "tree-core.h" 1162)
                   (!fields 2 
                    (!pair  "stmt"
                     (!type already_seen 310)
-                    (!srcfileloc  "tree-core.h" 1159)
+                    (!srcfileloc  "tree-core.h" 1162)
                     nil )
                    (!pair  "ssa_name"
                     (!type already_seen 5)
-                    (!srcfileloc  "tree-core.h" 1159)
+                    (!srcfileloc  "tree-core.h" 1162)
                     nil )
                   )
                   nil 511 nil )
-                 (!srcfileloc  "tree-core.h" 1159)
+                 (!srcfileloc  "tree-core.h" 1162)
                  (!options 
                   (!option skip string  "")
                  )
                 )
                 (!pair  "use"
                  (!type already_seen 6)
-                 (!srcfileloc  "tree-core.h" 1160)
+                 (!srcfileloc  "tree-core.h" 1163)
                  (!options 
                   (!option skip string  "")
                  )
                 )
                )
                nil 511 nil nil )
-              (!srcfileloc  "tree-core.h" 1182)
+              (!srcfileloc  "tree-core.h" 1185)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1615)
+           (!srcfileloc  "tree-core.h" 1618)
            (!options 
             (!option tag string  "TS_SSA_NAME")
            )
           )
           (!pair  "block"
            (!type struct 513 nil  gc_used "tree_block"
-            (!srcfileloc  "tree-core.h" 1232)
+            (!srcfileloc  "tree-core.h" 1235)
             (!fields 12 
              (!pair  "base"
               (!type already_seen 8)
-              (!srcfileloc  "tree-core.h" 1216)
+              (!srcfileloc  "tree-core.h" 1219)
               nil )
              (!pair  "chain"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1217)
+              (!srcfileloc  "tree-core.h" 1220)
               nil )
              (!pair  "abstract_flag"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1219)
+              (!srcfileloc  "tree-core.h" 1222)
               nil )
              (!pair  "block_num"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1220)
+              (!srcfileloc  "tree-core.h" 1223)
               nil )
              (!pair  "locus"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1222)
+              (!srcfileloc  "tree-core.h" 1225)
               nil )
              (!pair  "vars"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1224)
+              (!srcfileloc  "tree-core.h" 1227)
               nil )
              (!pair  "nonlocalized_vars"
               (!type already_seen 45)
-              (!srcfileloc  "tree-core.h" 1225)
+              (!srcfileloc  "tree-core.h" 1228)
               nil )
              (!pair  "subblocks"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1227)
+              (!srcfileloc  "tree-core.h" 1230)
               nil )
              (!pair  "supercontext"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1228)
+              (!srcfileloc  "tree-core.h" 1231)
               nil )
              (!pair  "abstract_origin"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1229)
+              (!srcfileloc  "tree-core.h" 1232)
               nil )
              (!pair  "fragment_origin"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1230)
+              (!srcfileloc  "tree-core.h" 1233)
               nil )
              (!pair  "fragment_chain"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1231)
+              (!srcfileloc  "tree-core.h" 1234)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1616)
+           (!srcfileloc  "tree-core.h" 1619)
            (!options 
             (!option tag string  "TS_BLOCK")
            )
           )
           (!pair  "binfo"
            (!type struct 514 nil  gc_used "tree_binfo"
-            (!srcfileloc  "tree-core.h" 1303)
+            (!srcfileloc  "tree-core.h" 1306)
             (!fields 10 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1290)
+              (!srcfileloc  "tree-core.h" 1293)
               nil )
              (!pair  "offset"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1292)
+              (!srcfileloc  "tree-core.h" 1295)
               nil )
              (!pair  "vtable"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1293)
+              (!srcfileloc  "tree-core.h" 1296)
               nil )
              (!pair  "virtuals"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1294)
+              (!srcfileloc  "tree-core.h" 1297)
               nil )
              (!pair  "vptr_field"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1295)
+              (!srcfileloc  "tree-core.h" 1298)
               nil )
              (!pair  "base_accesses"
               (!type already_seen 45)
-              (!srcfileloc  "tree-core.h" 1296)
+              (!srcfileloc  "tree-core.h" 1299)
               nil )
              (!pair  "inheritance"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1297)
+              (!srcfileloc  "tree-core.h" 1300)
               nil )
              (!pair  "vtt_subvtt"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1299)
+              (!srcfileloc  "tree-core.h" 1302)
               nil )
              (!pair  "vtt_vptr"
               (!type already_seen 5)
-              (!srcfileloc  "tree-core.h" 1300)
+              (!srcfileloc  "tree-core.h" 1303)
               nil )
              (!pair  "base_binfos"
               (!type already_seen 46)
-              (!srcfileloc  "tree-core.h" 1302)
+              (!srcfileloc  "tree-core.h" 1305)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1617)
+           (!srcfileloc  "tree-core.h" 1620)
            (!options 
             (!option tag string  "TS_BINFO")
            )
           )
           (!pair  "stmt_list"
            (!type struct 515 nil  gc_used "tree_statement_list"
-            (!srcfileloc  "tree-core.h" 1540)
+            (!srcfileloc  "tree-core.h" 1543)
             (!fields 3 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1537)
+              (!srcfileloc  "tree-core.h" 1540)
               nil )
              (!pair  "head"
               (!type pointer 516 nil  gc_used
                (!type struct 517 
                 (!type already_seen 516)
                 gc_pointed_to "tree_statement_list_node"
-                (!srcfileloc  "tree-core.h" 1533)
+                (!srcfileloc  "tree-core.h" 1536)
                 (!fields 3 
                  (!pair  "prev"
                   (!type already_seen 516)
-                  (!srcfileloc  "tree-core.h" 1530)
+                  (!srcfileloc  "tree-core.h" 1533)
                   nil )
                  (!pair  "next"
                   (!type already_seen 516)
-                  (!srcfileloc  "tree-core.h" 1531)
+                  (!srcfileloc  "tree-core.h" 1534)
                   nil )
                  (!pair  "stmt"
                   (!type already_seen 5)
-                  (!srcfileloc  "tree-core.h" 1532)
+                  (!srcfileloc  "tree-core.h" 1535)
                   nil )
                 )
                 (!options 
@@ -11059,125 +11063,125 @@
                 )
                 511 nil nil )
               )
-              (!srcfileloc  "tree-core.h" 1538)
+              (!srcfileloc  "tree-core.h" 1541)
               nil )
              (!pair  "tail"
               (!type already_seen 516)
-              (!srcfileloc  "tree-core.h" 1539)
+              (!srcfileloc  "tree-core.h" 1542)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1618)
+           (!srcfileloc  "tree-core.h" 1621)
            (!options 
             (!option tag string  "TS_STATEMENT_LIST")
            )
           )
           (!pair  "constructor"
            (!type struct 518 nil  gc_used "tree_constructor"
-            (!srcfileloc  "tree-core.h" 1107)
+            (!srcfileloc  "tree-core.h" 1110)
             (!fields 2 
              (!pair  "typed"
               (!type already_seen 14)
-              (!srcfileloc  "tree-core.h" 1105)
+              (!srcfileloc  "tree-core.h" 1108)
               nil )
              (!pair  "elts"
               (!type already_seen 465)
-              (!srcfileloc  "tree-core.h" 1106)
+              (!srcfileloc  "tree-core.h" 1109)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1619)
+           (!srcfileloc  "tree-core.h" 1622)
            (!options 
             (!option tag string  "TS_CONSTRUCTOR")
            )
           )
           (!pair  "omp_clause"
            (!type struct 519 nil  gc_used "tree_omp_clause"
-            (!srcfileloc  "tree-core.h" 1213)
+            (!srcfileloc  "tree-core.h" 1216)
             (!fields 7 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1194)
+              (!srcfileloc  "tree-core.h" 1197)
               nil )
              (!pair  "locus"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1195)
+              (!srcfileloc  "tree-core.h" 1198)
               nil )
              (!pair  "code"
               (!type already_seen 9)
-              (!srcfileloc  "tree-core.h" 1196)
+              (!srcfileloc  "tree-core.h" 1199)
               nil )
              (!pair  "subcode"
               (!type union 520 nil  gc_unused "omp_clause_subcode"
-               (!srcfileloc  "tree-core.h" 1204)
+               (!srcfileloc  "tree-core.h" 1207)
                (!fields 6 
                 (!pair  "default_kind"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1198)
+                 (!srcfileloc  "tree-core.h" 1201)
                  nil )
                 (!pair  "schedule_kind"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1199)
+                 (!srcfileloc  "tree-core.h" 1202)
                  nil )
                 (!pair  "depend_kind"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1200)
+                 (!srcfileloc  "tree-core.h" 1203)
                  nil )
                 (!pair  "map_kind"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1201)
+                 (!srcfileloc  "tree-core.h" 1204)
                  nil )
                 (!pair  "proc_bind_kind"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1202)
+                 (!srcfileloc  "tree-core.h" 1205)
                  nil )
                 (!pair  "reduction_code"
                  (!type already_seen 9)
-                 (!srcfileloc  "tree-core.h" 1203)
+                 (!srcfileloc  "tree-core.h" 1206)
                  nil )
                )
                nil 511 nil )
-              (!srcfileloc  "tree-core.h" 1204)
+              (!srcfileloc  "tree-core.h" 1207)
               (!options 
                (!option skip string  "")
               )
              )
              (!pair  "gimple_reduction_init"
               (!type already_seen 310)
-              (!srcfileloc  "tree-core.h" 1208)
+              (!srcfileloc  "tree-core.h" 1211)
               nil )
              (!pair  "gimple_reduction_merge"
               (!type already_seen 310)
-              (!srcfileloc  "tree-core.h" 1209)
+              (!srcfileloc  "tree-core.h" 1212)
               nil )
              (!pair  "ops"
               (!type array 521 nil  gc_used "1" 
                (!type already_seen 5)
               )
-              (!srcfileloc  "tree-core.h" 1212)
+              (!srcfileloc  "tree-core.h" 1215)
               (!options 
                (!option length string  "omp_clause_num_ops[OMP_CLAUSE_CODE ((tree)&%h)]")
               )
              )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1620)
+           (!srcfileloc  "tree-core.h" 1623)
            (!options 
             (!option tag string  "TS_OMP_CLAUSE")
            )
           )
           (!pair  "optimization"
            (!type struct 522 nil  gc_used "tree_optimization_option"
-            (!srcfileloc  "tree-core.h" 1558)
+            (!srcfileloc  "tree-core.h" 1561)
             (!fields 4 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1546)
+              (!srcfileloc  "tree-core.h" 1549)
               nil )
              (!pair  "opts"
               (!type struct 523 nil  gc_used "cl_optimization"
-               (!fileloc  "options.h" 3894)
-               (!fields 189 
+               (!fileloc  "options.h" 3893)
+               (!fields 188 
                 (!pair  "x_align_functions"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3705)
@@ -11422,525 +11426,521 @@
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3765)
                  nil )
-                (!pair  "x_flag_ipa_sem_equality"
+                (!pair  "x_flag_ipa_sra"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3766)
                  nil )
-                (!pair  "x_flag_ipa_sra"
+                (!pair  "x_flag_ira_hoist_pressure"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3767)
                  nil )
-                (!pair  "x_flag_ira_hoist_pressure"
+                (!pair  "x_flag_ira_loop_pressure"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3768)
                  nil )
-                (!pair  "x_flag_ira_loop_pressure"
+                (!pair  "x_flag_isolate_erroneous_paths_attribute"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3769)
                  nil )
-                (!pair  "x_flag_isolate_erroneous_paths_attribute"
+                (!pair  "x_flag_isolate_erroneous_paths_dereference"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3770)
                  nil )
-                (!pair  "x_flag_isolate_erroneous_paths_dereference"
+                (!pair  "x_flag_ivopts"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3771)
                  nil )
-                (!pair  "x_flag_ivopts"
+                (!pair  "x_flag_jump_tables"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3772)
                  nil )
-                (!pair  "x_flag_jump_tables"
+                (!pair  "x_flag_live_range_shrinkage"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3773)
                  nil )
-                (!pair  "x_flag_live_range_shrinkage"
+                (!pair  "x_flag_loop_block"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3774)
                  nil )
-                (!pair  "x_flag_loop_block"
+                (!pair  "x_flag_loop_interchange"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3775)
                  nil )
-                (!pair  "x_flag_loop_interchange"
+                (!pair  "x_flag_loop_optimize_isl"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3776)
                  nil )
-                (!pair  "x_flag_loop_optimize_isl"
+                (!pair  "x_flag_loop_parallelize_all"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3777)
                  nil )
-                (!pair  "x_flag_loop_parallelize_all"
+                (!pair  "x_flag_loop_strip_mine"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3778)
                  nil )
-                (!pair  "x_flag_loop_strip_mine"
+                (!pair  "x_flag_errno_math"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3779)
                  nil )
-                (!pair  "x_flag_errno_math"
+                (!pair  "x_flag_merge_constants"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3780)
                  nil )
-                (!pair  "x_flag_merge_constants"
+                (!pair  "x_flag_modulo_sched"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3781)
                  nil )
-                (!pair  "x_flag_modulo_sched"
+                (!pair  "x_flag_move_loop_invariants"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3782)
                  nil )
-                (!pair  "x_flag_move_loop_invariants"
+                (!pair  "x_flag_non_call_exceptions"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3783)
                  nil )
-                (!pair  "x_flag_non_call_exceptions"
+                (!pair  "x_flag_nothrow_opt"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3784)
                  nil )
-                (!pair  "x_flag_nothrow_opt"
+                (!pair  "x_flag_omit_frame_pointer"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3785)
                  nil )
-                (!pair  "x_flag_omit_frame_pointer"
+                (!pair  "x_flag_opt_info"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3786)
                  nil )
-                (!pair  "x_flag_opt_info"
+                (!pair  "x_flag_optimize_sibling_calls"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3787)
                  nil )
-                (!pair  "x_flag_optimize_sibling_calls"
+                (!pair  "x_flag_optimize_strlen"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3788)
                  nil )
-                (!pair  "x_flag_optimize_strlen"
+                (!pair  "x_flag_pack_struct"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3789)
                  nil )
-                (!pair  "x_flag_pack_struct"
+                (!pair  "x_flag_peel_loops"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3790)
                  nil )
-                (!pair  "x_flag_peel_loops"
+                (!pair  "x_flag_no_peephole"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3791)
                  nil )
-                (!pair  "x_flag_no_peephole"
+                (!pair  "x_flag_peephole2"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3792)
                  nil )
-                (!pair  "x_flag_peephole2"
+                (!pair  "x_flag_predictive_commoning"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3793)
                  nil )
-                (!pair  "x_flag_predictive_commoning"
+                (!pair  "x_flag_prefetch_loop_arrays"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3794)
                  nil )
-                (!pair  "x_flag_prefetch_loop_arrays"
+                (!pair  "x_flag_pcc_struct_return"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3795)
                  nil )
-                (!pair  "x_flag_pcc_struct_return"
+                (!pair  "x_flag_rename_registers"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3796)
                  nil )
-                (!pair  "x_flag_rename_registers"
+                (!pair  "x_flag_reorder_blocks"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3797)
                  nil )
-                (!pair  "x_flag_reorder_blocks"
+                (!pair  "x_flag_reorder_blocks_and_partition"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3798)
                  nil )
-                (!pair  "x_flag_reorder_blocks_and_partition"
+                (!pair  "x_flag_reorder_functions"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3799)
                  nil )
-                (!pair  "x_flag_reorder_functions"
+                (!pair  "x_flag_rerun_cse_after_loop"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3800)
                  nil )
-                (!pair  "x_flag_rerun_cse_after_loop"
+                (!pair  "x_flag_resched_modulo_sched"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3801)
                  nil )
-                (!pair  "x_flag_resched_modulo_sched"
+                (!pair  "x_flag_rounding_math"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3802)
                  nil )
-                (!pair  "x_flag_rounding_math"
+                (!pair  "x_flag_rtti"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3803)
                  nil )
-                (!pair  "x_flag_rtti"
+                (!pair  "x_flag_sched_critical_path_heuristic"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3804)
                  nil )
-                (!pair  "x_flag_sched_critical_path_heuristic"
+                (!pair  "x_flag_sched_dep_count_heuristic"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3805)
                  nil )
-                (!pair  "x_flag_sched_dep_count_heuristic"
+                (!pair  "x_flag_sched_group_heuristic"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3806)
                  nil )
-                (!pair  "x_flag_sched_group_heuristic"
+                (!pair  "x_flag_schedule_interblock"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3807)
                  nil )
-                (!pair  "x_flag_schedule_interblock"
+                (!pair  "x_flag_sched_last_insn_heuristic"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3808)
                  nil )
-                (!pair  "x_flag_sched_last_insn_heuristic"
+                (!pair  "x_flag_sched_pressure"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3809)
                  nil )
-                (!pair  "x_flag_sched_pressure"
+                (!pair  "x_flag_sched_rank_heuristic"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3810)
                  nil )
-                (!pair  "x_flag_sched_rank_heuristic"
+                (!pair  "x_flag_schedule_speculative"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3811)
                  nil )
-                (!pair  "x_flag_schedule_speculative"
+                (!pair  "x_flag_sched_spec_insn_heuristic"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3812)
                  nil )
-                (!pair  "x_flag_sched_spec_insn_heuristic"
+                (!pair  "x_flag_schedule_speculative_load"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3813)
                  nil )
-                (!pair  "x_flag_schedule_speculative_load"
+                (!pair  "x_flag_schedule_speculative_load_dangerous"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3814)
                  nil )
-                (!pair  "x_flag_schedule_speculative_load_dangerous"
+                (!pair  "x_flag_sched2_use_superblocks"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3815)
                  nil )
-                (!pair  "x_flag_sched2_use_superblocks"
+                (!pair  "x_flag_schedule_insns"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3816)
                  nil )
-                (!pair  "x_flag_schedule_insns"
+                (!pair  "x_flag_schedule_insns_after_reload"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3817)
                  nil )
-                (!pair  "x_flag_schedule_insns_after_reload"
+                (!pair  "x_flag_section_anchors"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3818)
                  nil )
-                (!pair  "x_flag_section_anchors"
+                (!pair  "x_flag_sel_sched_pipelining"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3819)
                  nil )
-                (!pair  "x_flag_sel_sched_pipelining"
+                (!pair  "x_flag_sel_sched_pipelining_outer_loops"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3820)
                  nil )
-                (!pair  "x_flag_sel_sched_pipelining_outer_loops"
+                (!pair  "x_flag_sel_sched_reschedule_pipelined"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3821)
                  nil )
-                (!pair  "x_flag_sel_sched_reschedule_pipelined"
+                (!pair  "x_flag_selective_scheduling"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3822)
                  nil )
-                (!pair  "x_flag_selective_scheduling"
+                (!pair  "x_flag_selective_scheduling2"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3823)
                  nil )
-                (!pair  "x_flag_selective_scheduling2"
+                (!pair  "x_flag_short_double"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3824)
                  nil )
-                (!pair  "x_flag_short_double"
+                (!pair  "x_flag_short_enums"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3825)
                  nil )
-                (!pair  "x_flag_short_enums"
+                (!pair  "x_flag_short_wchar"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3826)
                  nil )
-                (!pair  "x_flag_short_wchar"
+                (!pair  "x_flag_shrink_wrap"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3827)
                  nil )
-                (!pair  "x_flag_shrink_wrap"
+                (!pair  "x_flag_signaling_nans"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3828)
                  nil )
-                (!pair  "x_flag_signaling_nans"
+                (!pair  "x_flag_signed_zeros"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3829)
                  nil )
-                (!pair  "x_flag_signed_zeros"
+                (!pair  "x_flag_single_precision_constant"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3830)
                  nil )
-                (!pair  "x_flag_single_precision_constant"
+                (!pair  "x_flag_split_ivs_in_unroller"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3831)
                  nil )
-                (!pair  "x_flag_split_ivs_in_unroller"
+                (!pair  "x_flag_split_wide_types"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3832)
                  nil )
-                (!pair  "x_flag_split_wide_types"
+                (!pair  "x_flag_strict_aliasing"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3833)
                  nil )
-                (!pair  "x_flag_strict_aliasing"
+                (!pair  "x_flag_strict_enums"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3834)
                  nil )
-                (!pair  "x_flag_strict_enums"
+                (!pair  "x_flag_thread_jumps"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3835)
                  nil )
-                (!pair  "x_flag_thread_jumps"
+                (!pair  "x_flag_threadsafe_statics"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3836)
                  nil )
-                (!pair  "x_flag_threadsafe_statics"
+                (!pair  "x_flag_toplevel_reorder"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3837)
                  nil )
-                (!pair  "x_flag_toplevel_reorder"
+                (!pair  "x_flag_trapping_math"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3838)
                  nil )
-                (!pair  "x_flag_trapping_math"
+                (!pair  "x_flag_trapv"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3839)
                  nil )
-                (!pair  "x_flag_trapv"
+                (!pair  "x_flag_tree_bit_ccp"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3840)
                  nil )
-                (!pair  "x_flag_tree_bit_ccp"
+                (!pair  "x_flag_tree_builtin_call_dce"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3841)
                  nil )
-                (!pair  "x_flag_tree_builtin_call_dce"
+                (!pair  "x_flag_tree_ccp"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3842)
                  nil )
-                (!pair  "x_flag_tree_ccp"
+                (!pair  "x_flag_tree_ch"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3843)
                  nil )
-                (!pair  "x_flag_tree_ch"
+                (!pair  "x_flag_ssa_coalesce_vars"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3844)
                  nil )
-                (!pair  "x_flag_ssa_coalesce_vars"
+                (!pair  "x_flag_tree_copy_prop"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3845)
                  nil )
-                (!pair  "x_flag_tree_copy_prop"
+                (!pair  "x_flag_tree_copyrename"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3846)
                  nil )
-                (!pair  "x_flag_tree_copyrename"
+                (!pair  "x_flag_tree_cselim"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3847)
                  nil )
-                (!pair  "x_flag_tree_cselim"
+                (!pair  "x_flag_tree_dce"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3848)
                  nil )
-                (!pair  "x_flag_tree_dce"
+                (!pair  "x_flag_tree_dom"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3849)
                  nil )
-                (!pair  "x_flag_tree_dom"
+                (!pair  "x_flag_tree_dse"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3850)
                  nil )
-                (!pair  "x_flag_tree_dse"
+                (!pair  "x_flag_tree_forwprop"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3851)
                  nil )
-                (!pair  "x_flag_tree_forwprop"
+                (!pair  "x_flag_tree_fre"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3852)
                  nil )
-                (!pair  "x_flag_tree_fre"
+                (!pair  "x_flag_tree_loop_distribute_patterns"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3853)
                  nil )
-                (!pair  "x_flag_tree_loop_distribute_patterns"
+                (!pair  "x_flag_tree_loop_distribution"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3854)
                  nil )
-                (!pair  "x_flag_tree_loop_distribution"
+                (!pair  "x_flag_tree_loop_if_convert"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3855)
                  nil )
-                (!pair  "x_flag_tree_loop_if_convert"
+                (!pair  "x_flag_tree_loop_if_convert_stores"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3856)
                  nil )
-                (!pair  "x_flag_tree_loop_if_convert_stores"
+                (!pair  "x_flag_tree_loop_im"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3857)
                  nil )
-                (!pair  "x_flag_tree_loop_im"
+                (!pair  "x_flag_tree_loop_ivcanon"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3858)
                  nil )
-                (!pair  "x_flag_tree_loop_ivcanon"
+                (!pair  "x_flag_tree_loop_optimize"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3859)
                  nil )
-                (!pair  "x_flag_tree_loop_optimize"
+                (!pair  "x_flag_tree_loop_vectorize"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3860)
                  nil )
-                (!pair  "x_flag_tree_loop_vectorize"
+                (!pair  "x_flag_tree_live_range_split"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3861)
                  nil )
-                (!pair  "x_flag_tree_live_range_split"
+                (!pair  "x_flag_tree_partial_pre"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3862)
                  nil )
-                (!pair  "x_flag_tree_partial_pre"
+                (!pair  "x_flag_tree_phiprop"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3863)
                  nil )
-                (!pair  "x_flag_tree_phiprop"
+                (!pair  "x_flag_tree_pre"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3864)
                  nil )
-                (!pair  "x_flag_tree_pre"
+                (!pair  "x_flag_tree_pta"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3865)
                  nil )
-                (!pair  "x_flag_tree_pta"
+                (!pair  "x_flag_tree_reassoc"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3866)
                  nil )
-                (!pair  "x_flag_tree_reassoc"
+                (!pair  "x_flag_tree_scev_cprop"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3867)
                  nil )
-                (!pair  "x_flag_tree_scev_cprop"
+                (!pair  "x_flag_tree_sink"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3868)
                  nil )
-                (!pair  "x_flag_tree_sink"
+                (!pair  "x_flag_tree_slp_vectorize"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3869)
                  nil )
-                (!pair  "x_flag_tree_slp_vectorize"
+                (!pair  "x_flag_tree_slsr"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3870)
                  nil )
-                (!pair  "x_flag_tree_slsr"
+                (!pair  "x_flag_tree_sra"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3871)
                  nil )
-                (!pair  "x_flag_tree_sra"
+                (!pair  "x_flag_tree_switch_conversion"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3872)
                  nil )
-                (!pair  "x_flag_tree_switch_conversion"
+                (!pair  "x_flag_tree_tail_merge"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3873)
                  nil )
-                (!pair  "x_flag_tree_tail_merge"
+                (!pair  "x_flag_tree_ter"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3874)
                  nil )
-                (!pair  "x_flag_tree_ter"
+                (!pair  "x_flag_tree_vectorize"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3875)
                  nil )
-                (!pair  "x_flag_tree_vectorize"
+                (!pair  "x_flag_tree_vrp"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3876)
                  nil )
-                (!pair  "x_flag_tree_vrp"
+                (!pair  "x_flag_unit_at_a_time"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3877)
                  nil )
-                (!pair  "x_flag_unit_at_a_time"
+                (!pair  "x_flag_unroll_all_loops"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3878)
                  nil )
-                (!pair  "x_flag_unroll_all_loops"
+                (!pair  "x_flag_unroll_loops"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3879)
                  nil )
-                (!pair  "x_flag_unroll_loops"
+                (!pair  "x_flag_unsafe_loop_optimizations"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3880)
                  nil )
-                (!pair  "x_flag_unsafe_loop_optimizations"
+                (!pair  "x_flag_unsafe_math_optimizations"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3881)
                  nil )
-                (!pair  "x_flag_unsafe_math_optimizations"
+                (!pair  "x_flag_unswitch_loops"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3882)
                  nil )
-                (!pair  "x_flag_unswitch_loops"
+                (!pair  "x_flag_unwind_tables"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3883)
                  nil )
-                (!pair  "x_flag_unwind_tables"
+                (!pair  "x_flag_var_tracking"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3884)
                  nil )
-                (!pair  "x_flag_var_tracking"
+                (!pair  "x_flag_var_tracking_assignments"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3885)
                  nil )
-                (!pair  "x_flag_var_tracking_assignments"
+                (!pair  "x_flag_var_tracking_assignments_toggle"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3886)
                  nil )
-                (!pair  "x_flag_var_tracking_assignments_toggle"
+                (!pair  "x_flag_var_tracking_uninit"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3887)
                  nil )
-                (!pair  "x_flag_var_tracking_uninit"
+                (!pair  "x_flag_variable_expansion_in_unroller"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3888)
                  nil )
-                (!pair  "x_flag_variable_expansion_in_unroller"
+                (!pair  "x_flag_value_profile_transformations"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3889)
                  nil )
-                (!pair  "x_flag_value_profile_transformations"
+                (!pair  "x_flag_web"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3890)
                  nil )
-                (!pair  "x_flag_web"
+                (!pair  "x_flag_whole_program"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3891)
                  nil )
-                (!pair  "x_flag_whole_program"
+                (!pair  "x_flag_wrapv"
                  (!type already_seen 9)
                  (!fileloc  "options.h" 3892)
                  nil )
-                (!pair  "x_flag_wrapv"
-                 (!type already_seen 9)
-                 (!fileloc  "options.h" 3893)
-                 nil )
                )
                nil 511 nil nil )
-              (!srcfileloc  "tree-core.h" 1549)
+              (!srcfileloc  "tree-core.h" 1552)
               nil )
              (!pair  "optabs"
               (!type already_seen 10)
-              (!srcfileloc  "tree-core.h" 1553)
+              (!srcfileloc  "tree-core.h" 1556)
               (!options 
                (!option atomic string  "")
               )
@@ -11953,25 +11953,25 @@
                 (!fields 0 )
                 nil 0 nil nil )
               )
-              (!srcfileloc  "tree-core.h" 1557)
+              (!srcfileloc  "tree-core.h" 1560)
               (!options 
                (!option skip string  "")
               )
              )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1621)
+           (!srcfileloc  "tree-core.h" 1624)
            (!options 
             (!option tag string  "TS_OPTIMIZATION")
            )
           )
           (!pair  "target_option"
            (!type struct 526 nil  gc_used "tree_target_option"
-            (!srcfileloc  "tree-core.h" 1574)
+            (!srcfileloc  "tree-core.h" 1577)
             (!fields 3 
              (!pair  "common"
               (!type already_seen 15)
-              (!srcfileloc  "tree-core.h" 1567)
+              (!srcfileloc  "tree-core.h" 1570)
               nil )
              (!pair  "globals"
               (!type pointer 527 nil  gc_used
@@ -12226,23 +12226,23 @@
                 )
                 nil 511 nil nil )
               )
-              (!srcfileloc  "tree-core.h" 1570)
+              (!srcfileloc  "tree-core.h" 1573)
               nil )
              (!pair  "opts"
               (!type struct 555 nil  gc_used "cl_target_option"
-               (!fileloc  "options.h" 3900)
+               (!fileloc  "options.h" 3899)
                (!fields 1 
                 (!pair  "x_arm_lra_flag"
                  (!type already_seen 9)
-                 (!fileloc  "options.h" 3899)
+                 (!fileloc  "options.h" 3898)
                  nil )
                )
                nil 511 nil nil )
-              (!srcfileloc  "tree-core.h" 1573)
+              (!srcfileloc  "tree-core.h" 1576)
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "tree-core.h" 1622)
+           (!srcfileloc  "tree-core.h" 1625)
            (!options 
             (!option tag string  "TS_TARGET_OPTION")
            )
@@ -12274,7 +12274,7 @@
                )
               )
               (!options 
-               (!option chain_next string  "CODE_CONTAINS_STRUCT (TREE_CODE (&%h.generic), TS_COMMON) ? ((union lang_tree_node *) TREE_CHAIN (&%h.generic)) : NULL")
+               (!option chain_next string  "CODE_CONTAINS_STRUCT (TREE_CODE (&%h.generic), TS_TYPE_COMMON) ? ((union lang_tree_node *) %h.generic.type_common.next_variant) : CODE_CONTAINS_STRUCT (TREE_CODE (&%h.generic), TS_COMMON) ? ((union lang_tree_node *) %h.generic.common.chain) : NULL")
                (!option desc string  "lto_tree_node_structure (&%h)")
               )
               64 
@@ -12699,7 +12699,7 @@
                        (!srcfileloc  "c/c-decl.c" 212)
                        (!fields 11 
                         (!pair  "u"
-                         (!type union 585 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/c/c-decl.c:198"
+                         (!type union 585 nil  gc_used "anonymous:../.././../gcc/gcc-UBER/gcc/c/c-decl.c:198"
                           (!srcfileloc  "c/c-decl.c" 201)
                           (!fields 2 
                            (!pair  "type"
@@ -13718,7 +13718,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 644 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/java/expr.c:2060"nil 
+ (!type struct 644 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/java/expr.c:2060"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -13824,19 +13824,19 @@
   nil 0 nil nil )
  
  (!type struct 653 nil  gc_used "gfc_powdecl_list"
-  (!srcfileloc  "fortran/trans.h" 718)
+  (!srcfileloc  "fortran/trans.h" 719)
   (!fields 3 
    (!pair  "integer"
     (!type already_seen 5)
-    (!srcfileloc  "fortran/trans.h" 715)
+    (!srcfileloc  "fortran/trans.h" 716)
     nil )
    (!pair  "real"
     (!type already_seen 5)
-    (!srcfileloc  "fortran/trans.h" 716)
+    (!srcfileloc  "fortran/trans.h" 717)
     nil )
    (!pair  "cmplx"
     (!type already_seen 5)
-    (!srcfileloc  "fortran/trans.h" 717)
+    (!srcfileloc  "fortran/trans.h" 718)
     nil )
   )
   nil 8 nil nil )
@@ -13845,11 +13845,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 655 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/fortran/trans.h:334"nil 
+ (!type struct 655 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/fortran/trans.h:336"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 656 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/fortran/trans.h:322"nil 
+ (!type struct 656 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/fortran/trans.h:324"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -13873,7 +13873,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 662 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/fortran/trans.h:31"nil 
+ (!type struct 662 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/fortran/trans.h:33"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -14016,19 +14016,19 @@
    (!type already_seen 668)
   )
   gc_pointed_to "module_htab_entry"
-  (!srcfileloc  "fortran/trans.h" 565)
+  (!srcfileloc  "fortran/trans.h" 567)
   (!fields 3 
    (!pair  "name"
     (!type already_seen 36)
-    (!srcfileloc  "fortran/trans.h" 562)
+    (!srcfileloc  "fortran/trans.h" 564)
     nil )
    (!pair  "namespace_decl"
     (!type already_seen 5)
-    (!srcfileloc  "fortran/trans.h" 563)
+    (!srcfileloc  "fortran/trans.h" 565)
     nil )
    (!pair  "decls"
     (!type already_seen 53)
-    (!srcfileloc  "fortran/trans.h" 564)
+    (!srcfileloc  "fortran/trans.h" 566)
     (!options 
      (!option param_is type 
       (!type already_seen 7)
@@ -14146,27 +14146,27 @@
    (!type already_seen 684)
   )
   gc_pointed_to "vec<tree_int,va_gc>"
-  (!srcfileloc  "cp/parser.c" 8664)
+  (!srcfileloc  "cp/parser.c" 8668)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 3)
-    (!srcfileloc  "cp/parser.c" 8664)
+    (!srcfileloc  "cp/parser.c" 8668)
     nil )
    (!pair  "tree_int"
     (!type struct 686 nil  gc_used "tree_int"
-     (!srcfileloc  "cp/parser.c" 8663)
+     (!srcfileloc  "cp/parser.c" 8667)
      (!fields 2 
       (!pair  "t"
        (!type already_seen 5)
-       (!srcfileloc  "cp/parser.c" 8661)
+       (!srcfileloc  "cp/parser.c" 8665)
        nil )
       (!pair  "i"
        (!type already_seen 9)
-       (!srcfileloc  "cp/parser.c" 8662)
+       (!srcfileloc  "cp/parser.c" 8666)
        nil )
      )
      nil 260 nil nil )
-    (!srcfileloc  "cp/parser.c" 8664)
+    (!srcfileloc  "cp/parser.c" 8668)
     nil )
   )
  )
@@ -14530,39 +14530,39 @@
    (!type already_seen 709)
   )
   gc_pointed_to "constexpr_call"
-  (!srcfileloc  "cp/semantics.c" 8076)
+  (!srcfileloc  "cp/semantics.c" 8078)
   (!fields 4 
    (!pair  "fundef"
     (!type pointer 711 nil  gc_used
      (!type struct 712 
       (!type already_seen 711)
       gc_pointed_to "constexpr_fundef"
-      (!srcfileloc  "cp/semantics.c" 7393)
+      (!srcfileloc  "cp/semantics.c" 7395)
       (!fields 2 
        (!pair  "decl"
         (!type already_seen 5)
-        (!srcfileloc  "cp/semantics.c" 7391)
+        (!srcfileloc  "cp/semantics.c" 7393)
         nil )
        (!pair  "body"
         (!type already_seen 5)
-        (!srcfileloc  "cp/semantics.c" 7392)
+        (!srcfileloc  "cp/semantics.c" 7394)
         nil )
       )
       nil 260 nil nil )
     )
-    (!srcfileloc  "cp/semantics.c" 8060)
+    (!srcfileloc  "cp/semantics.c" 8062)
     nil )
    (!pair  "bindings"
     (!type already_seen 5)
-    (!srcfileloc  "cp/semantics.c" 8067)
+    (!srcfileloc  "cp/semantics.c" 8069)
     nil )
    (!pair  "result"
     (!type already_seen 5)
-    (!srcfileloc  "cp/semantics.c" 8072)
+    (!srcfileloc  "cp/semantics.c" 8074)
     nil )
    (!pair  "hash"
     (!type already_seen 9)
-    (!srcfileloc  "cp/semantics.c" 8075)
+    (!srcfileloc  "cp/semantics.c" 8077)
     nil )
   )
   nil 260 nil nil )
@@ -15124,7 +15124,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 759 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/c/c-parser.c:6077"nil 
+ (!type struct 759 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/c/c-parser.c:6077"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -15251,7 +15251,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 768 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/c-family/c-pragma.c:1162"nil 
+ (!type struct 768 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/c-family/c-pragma.c:1169"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -15260,27 +15260,27 @@
    (!type already_seen 769)
   )
   gc_pointed_to "opt_stack"
-  (!srcfileloc  "c-family/c-pragma.c" 895)
+  (!srcfileloc  "c-family/c-pragma.c" 902)
   (!fields 5 
    (!pair  "prev"
     (!type already_seen 770)
-    (!srcfileloc  "c-family/c-pragma.c" 890)
+    (!srcfileloc  "c-family/c-pragma.c" 897)
     nil )
    (!pair  "target_binary"
     (!type already_seen 5)
-    (!srcfileloc  "c-family/c-pragma.c" 891)
+    (!srcfileloc  "c-family/c-pragma.c" 898)
     nil )
    (!pair  "target_strings"
     (!type already_seen 5)
-    (!srcfileloc  "c-family/c-pragma.c" 892)
+    (!srcfileloc  "c-family/c-pragma.c" 899)
     nil )
    (!pair  "optimize_binary"
     (!type already_seen 5)
-    (!srcfileloc  "c-family/c-pragma.c" 893)
+    (!srcfileloc  "c-family/c-pragma.c" 900)
     nil )
    (!pair  "optimize_strings"
     (!type already_seen 5)
-    (!srcfileloc  "c-family/c-pragma.c" 894)
+    (!srcfileloc  "c-family/c-pragma.c" 901)
     nil )
   )
   nil 390 nil nil )
@@ -15290,27 +15290,27 @@
    (!type already_seen 771)
   )
   gc_pointed_to "vec<pending_redefinition,va_gc>"
-  (!srcfileloc  "c-family/c-pragma.c" 426)
+  (!srcfileloc  "c-family/c-pragma.c" 433)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 3)
-    (!srcfileloc  "c-family/c-pragma.c" 426)
+    (!srcfileloc  "c-family/c-pragma.c" 433)
     nil )
    (!pair  "pending_redefinition"
     (!type struct 773 nil  gc_used "pending_redefinition_d"
-     (!srcfileloc  "c-family/c-pragma.c" 423)
+     (!srcfileloc  "c-family/c-pragma.c" 430)
      (!fields 2 
       (!pair  "oldname"
        (!type already_seen 5)
-       (!srcfileloc  "c-family/c-pragma.c" 421)
+       (!srcfileloc  "c-family/c-pragma.c" 428)
        nil )
       (!pair  "newname"
        (!type already_seen 5)
-       (!srcfileloc  "c-family/c-pragma.c" 422)
+       (!srcfileloc  "c-family/c-pragma.c" 429)
        nil )
      )
      nil 390 nil nil )
-    (!srcfileloc  "c-family/c-pragma.c" 426)
+    (!srcfileloc  "c-family/c-pragma.c" 433)
     nil )
   )
  )
@@ -15436,15 +15436,15 @@
    (!type already_seen 788)
   )
   gc_pointed_to "vec<tree_gc_vec,va_gc>"
-  (!srcfileloc  "c-family/c-common.c" 11539)
+  (!srcfileloc  "c-family/c-common.c" 11540)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 3)
-    (!srcfileloc  "c-family/c-common.c" 11539)
+    (!srcfileloc  "c-family/c-common.c" 11540)
     nil )
    (!pair  "tree_gc_vec"
     (!type already_seen 45)
-    (!srcfileloc  "c-family/c-common.c" 11539)
+    (!srcfileloc  "c-family/c-common.c" 11540)
     nil )
   )
  )
@@ -15783,7 +15783,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 828 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/ada/gcc-interface/decl.c:176"nil 
+ (!type struct 828 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/ada/gcc-interface/decl.c:176"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -15966,23 +15966,23 @@
    (!type already_seen 856)
   )
   gc_pointed_to "tree_type_map"
-  (!srcfileloc  "ubsan.c" 55)
+  (!srcfileloc  "ubsan.c" 56)
   (!fields 2 
    (!pair  "type"
     (!type struct 858 nil  gc_used "tree_map_base"
-     (!srcfileloc  "tree-core.h" 1712)
+     (!srcfileloc  "tree-core.h" 1715)
      (!fields 1 
       (!pair  "from"
        (!type already_seen 5)
-       (!srcfileloc  "tree-core.h" 1711)
+       (!srcfileloc  "tree-core.h" 1714)
        nil )
      )
      nil 511 nil nil )
-    (!srcfileloc  "ubsan.c" 53)
+    (!srcfileloc  "ubsan.c" 54)
     nil )
    (!pair  "decl"
     (!type already_seen 5)
-    (!srcfileloc  "ubsan.c" 54)
+    (!srcfileloc  "ubsan.c" 55)
     nil )
   )
   nil 511 nil nil )
@@ -16055,16 +16055,16 @@
    (!type already_seen 873)
   )
   gc_pointed_to "vec<inline_summary_t,va_gc>"
-  (!srcfileloc  "ipa-inline.h" 162)
+  (!srcfileloc  "ipa-inline.h" 164)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 3)
-    (!srcfileloc  "ipa-inline.h" 162)
+    (!srcfileloc  "ipa-inline.h" 164)
     nil )
    (!pair  "inline_summary_t"
     (!type struct 875 nil  gc_used "inline_summary"
-     (!srcfileloc  "ipa-inline.h" 157)
-     (!fields 15 
+     (!srcfileloc  "ipa-inline.h" 159)
+     (!fields 16 
       (!pair  "estimated_self_stack_size"
        (!type already_seen 9)
        (!srcfileloc  "ipa-inline.h" 115)
@@ -16077,25 +16077,29 @@
        (!type already_seen 9)
        (!srcfileloc  "ipa-inline.h" 119)
        nil )
+      (!pair  "min_size"
+       (!type already_seen 9)
+       (!srcfileloc  "ipa-inline.h" 121)
+       nil )
       (!pair  "inlinable"
        (!type already_seen 9)
-       (!srcfileloc  "ipa-inline.h" 122)
+       (!srcfileloc  "ipa-inline.h" 124)
        nil )
       (!pair  "estimated_stack_size"
        (!type already_seen 9)
-       (!srcfileloc  "ipa-inline.h" 129)
+       (!srcfileloc  "ipa-inline.h" 131)
        nil )
       (!pair  "stack_frame_offset"
        (!type already_seen 9)
-       (!srcfileloc  "ipa-inline.h" 131)
+       (!srcfileloc  "ipa-inline.h" 133)
        nil )
       (!pair  "time"
        (!type already_seen 9)
-       (!srcfileloc  "ipa-inline.h" 133)
+       (!srcfileloc  "ipa-inline.h" 135)
        nil )
       (!pair  "size"
        (!type already_seen 9)
-       (!srcfileloc  "ipa-inline.h" 134)
+       (!srcfileloc  "ipa-inline.h" 136)
        nil )
       (!pair  "conds"
        (!type pointer 876 nil  gc_used
@@ -16143,22 +16147,22 @@
          )
         )
        )
-       (!srcfileloc  "ipa-inline.h" 138)
+       (!srcfileloc  "ipa-inline.h" 140)
        nil )
       (!pair  "entry"
        (!type pointer 879 nil  gc_used
         (!type user_struct 880 
          (!type already_seen 879)
          gc_pointed_to "vec<size_time_entry,va_gc>"
-         (!srcfileloc  "ipa-inline.h" 139)
+         (!srcfileloc  "ipa-inline.h" 141)
          (!fields 2 
           (!pair  "va_gc"
            (!type already_seen 3)
-           (!srcfileloc  "ipa-inline.h" 139)
+           (!srcfileloc  "ipa-inline.h" 141)
            nil )
           (!pair  "size_time_entry"
            (!type struct 881 nil  gc_used "size_time_entry"
-            (!srcfileloc  "ipa-inline.h" 139)
+            (!srcfileloc  "ipa-inline.h" 141)
             (!fields 3 
              (!pair  "predicate"
               (!type struct 882 
@@ -16188,45 +16192,45 @@
               nil )
             )
             nil 511 nil nil )
-           (!srcfileloc  "ipa-inline.h" 139)
+           (!srcfileloc  "ipa-inline.h" 141)
            nil )
          )
         )
        )
-       (!srcfileloc  "ipa-inline.h" 139)
+       (!srcfileloc  "ipa-inline.h" 141)
        nil )
       (!pair  "loop_iterations"
        (!type already_seen 883)
-       (!srcfileloc  "ipa-inline.h" 143)
+       (!srcfileloc  "ipa-inline.h" 145)
        (!options 
         (!option skip string  "")
        )
       )
       (!pair  "loop_stride"
        (!type already_seen 883)
-       (!srcfileloc  "ipa-inline.h" 146)
+       (!srcfileloc  "ipa-inline.h" 148)
        (!options 
         (!option skip string  "")
        )
       )
       (!pair  "array_index"
        (!type already_seen 883)
-       (!srcfileloc  "ipa-inline.h" 148)
+       (!srcfileloc  "ipa-inline.h" 150)
        (!options 
         (!option skip string  "")
        )
       )
       (!pair  "growth"
        (!type already_seen 9)
-       (!srcfileloc  "ipa-inline.h" 154)
+       (!srcfileloc  "ipa-inline.h" 156)
        nil )
       (!pair  "scc_no"
        (!type already_seen 9)
-       (!srcfileloc  "ipa-inline.h" 156)
+       (!srcfileloc  "ipa-inline.h" 158)
        nil )
      )
      nil 511 nil nil )
-    (!srcfileloc  "ipa-inline.h" 162)
+    (!srcfileloc  "ipa-inline.h" 164)
     nil )
   )
  )
@@ -16393,157 +16397,157 @@
      (!type struct 914 
       (!type already_seen 912)
       gc_pointed_to "cgraph_node"
-      (!srcfileloc  "cgraph.h" 434)
+      (!srcfileloc  "cgraph.h" 436)
       (!fields 34 
        (!pair  "callees"
         (!type pointer 915 nil  gc_used
          (!type struct 916 
           (!type already_seen 915)
           gc_pointed_to "cgraph_edge"
-          (!srcfileloc  "cgraph.h" 625)
+          (!srcfileloc  "cgraph.h" 627)
           (!fields 19 
            (!pair  "count"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 573)
+            (!srcfileloc  "cgraph.h" 575)
             nil )
            (!pair  "caller"
             (!type already_seen 912)
-            (!srcfileloc  "cgraph.h" 574)
+            (!srcfileloc  "cgraph.h" 576)
             nil )
            (!pair  "callee"
             (!type already_seen 912)
-            (!srcfileloc  "cgraph.h" 575)
+            (!srcfileloc  "cgraph.h" 577)
             nil )
            (!pair  "prev_caller"
             (!type already_seen 915)
-            (!srcfileloc  "cgraph.h" 576)
+            (!srcfileloc  "cgraph.h" 578)
             nil )
            (!pair  "next_caller"
             (!type already_seen 915)
-            (!srcfileloc  "cgraph.h" 577)
+            (!srcfileloc  "cgraph.h" 579)
             nil )
            (!pair  "prev_callee"
             (!type already_seen 915)
-            (!srcfileloc  "cgraph.h" 578)
+            (!srcfileloc  "cgraph.h" 580)
             nil )
            (!pair  "next_callee"
             (!type already_seen 915)
-            (!srcfileloc  "cgraph.h" 579)
+            (!srcfileloc  "cgraph.h" 581)
             nil )
            (!pair  "call_stmt"
             (!type already_seen 310)
-            (!srcfileloc  "cgraph.h" 580)
+            (!srcfileloc  "cgraph.h" 582)
             nil )
            (!pair  "indirect_info"
             (!type pointer 917 nil  gc_used
              (!type struct 918 
               (!type already_seen 917)
               gc_pointed_to "cgraph_indirect_call_info"
-              (!srcfileloc  "cgraph.h" 569)
+              (!srcfileloc  "cgraph.h" 571)
               (!fields 14 
                (!pair  "offset"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 542)
+                (!srcfileloc  "cgraph.h" 544)
                 nil )
                (!pair  "otr_token"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 544)
+                (!srcfileloc  "cgraph.h" 546)
                 nil )
                (!pair  "otr_type"
                 (!type already_seen 5)
-                (!srcfileloc  "cgraph.h" 546)
+                (!srcfileloc  "cgraph.h" 548)
                 nil )
                (!pair  "outer_type"
                 (!type already_seen 5)
-                (!srcfileloc  "cgraph.h" 546)
+                (!srcfileloc  "cgraph.h" 548)
                 nil )
                (!pair  "param_index"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 548)
+                (!srcfileloc  "cgraph.h" 550)
                 nil )
                (!pair  "ecf_flags"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 550)
+                (!srcfileloc  "cgraph.h" 552)
                 nil )
                (!pair  "common_target_id"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 552)
+                (!srcfileloc  "cgraph.h" 554)
                 nil )
                (!pair  "common_target_probability"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 554)
+                (!srcfileloc  "cgraph.h" 556)
                 nil )
                (!pair  "polymorphic"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 558)
+                (!srcfileloc  "cgraph.h" 560)
                 nil )
                (!pair  "agg_contents"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 561)
+                (!srcfileloc  "cgraph.h" 563)
                 nil )
                (!pair  "member_ptr"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 563)
+                (!srcfileloc  "cgraph.h" 565)
                 nil )
                (!pair  "by_ref"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 566)
+                (!srcfileloc  "cgraph.h" 568)
                 nil )
                (!pair  "maybe_in_construction"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 567)
+                (!srcfileloc  "cgraph.h" 569)
                 nil )
                (!pair  "maybe_derived_type"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 568)
+                (!srcfileloc  "cgraph.h" 570)
                 nil )
               )
               nil 511 nil nil )
             )
-            (!srcfileloc  "cgraph.h" 583)
+            (!srcfileloc  "cgraph.h" 585)
             nil )
            (!pair  "aux"
             (!type already_seen 10)
-            (!srcfileloc  "cgraph.h" 584)
+            (!srcfileloc  "cgraph.h" 586)
             (!options 
              (!option skip string  "")
             )
            )
            (!pair  "inline_failed"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 587)
+            (!srcfileloc  "cgraph.h" 589)
             nil )
            (!pair  "lto_stmt_uid"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 590)
+            (!srcfileloc  "cgraph.h" 592)
             nil )
            (!pair  "frequency"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 594)
+            (!srcfileloc  "cgraph.h" 596)
             nil )
            (!pair  "uid"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 596)
+            (!srcfileloc  "cgraph.h" 598)
             nil )
            (!pair  "indirect_inlining_edge"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 598)
+            (!srcfileloc  "cgraph.h" 600)
             nil )
            (!pair  "indirect_unknown_callee"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 601)
+            (!srcfileloc  "cgraph.h" 603)
             nil )
            (!pair  "call_stmt_cannot_inline_p"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 604)
+            (!srcfileloc  "cgraph.h" 606)
             nil )
            (!pair  "can_throw_external"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 606)
+            (!srcfileloc  "cgraph.h" 608)
             nil )
            (!pair  "speculative"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 624)
+            (!srcfileloc  "cgraph.h" 626)
             nil )
           )
           (!options 
@@ -16552,43 +16556,43 @@
           )
           511 nil nil )
         )
-        (!srcfileloc  "cgraph.h" 358)
+        (!srcfileloc  "cgraph.h" 360)
         nil )
        (!pair  "callers"
         (!type already_seen 915)
-        (!srcfileloc  "cgraph.h" 359)
+        (!srcfileloc  "cgraph.h" 361)
         nil )
        (!pair  "indirect_calls"
         (!type already_seen 915)
-        (!srcfileloc  "cgraph.h" 362)
+        (!srcfileloc  "cgraph.h" 364)
         nil )
        (!pair  "origin"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 364)
+        (!srcfileloc  "cgraph.h" 366)
         nil )
        (!pair  "nested"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 366)
+        (!srcfileloc  "cgraph.h" 368)
         nil )
        (!pair  "next_nested"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 368)
+        (!srcfileloc  "cgraph.h" 370)
         nil )
        (!pair  "next_sibling_clone"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 370)
+        (!srcfileloc  "cgraph.h" 372)
         nil )
        (!pair  "prev_sibling_clone"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 371)
+        (!srcfileloc  "cgraph.h" 373)
         nil )
        (!pair  "clones"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 372)
+        (!srcfileloc  "cgraph.h" 374)
         nil )
        (!pair  "clone_of"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 373)
+        (!srcfileloc  "cgraph.h" 375)
         nil )
        (!pair  "call_site_hash"
         (!type pointer 919 nil  gc_used
@@ -16600,7 +16604,7 @@
           (!type already_seen 915)
           nil nil nil nil nil nil nil nil nil nil )
         )
-        (!srcfileloc  "cgraph.h" 376)
+        (!srcfileloc  "cgraph.h" 378)
         (!options 
          (!option param_is type 
           (!type already_seen 916)
@@ -16609,96 +16613,96 @@
        )
        (!pair  "former_clone_of"
         (!type already_seen 5)
-        (!srcfileloc  "cgraph.h" 378)
+        (!srcfileloc  "cgraph.h" 380)
         nil )
        (!pair  "simdclone"
         (!type pointer 921 nil  gc_used
          (!type struct 922 
           (!type already_seen 921)
           gc_pointed_to "cgraph_simd_clone"
-          (!srcfileloc  "cgraph.h" 350)
+          (!srcfileloc  "cgraph.h" 352)
           (!fields 11 
            (!pair  "simdlen"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 318)
+            (!srcfileloc  "cgraph.h" 320)
             nil )
            (!pair  "nargs"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 322)
+            (!srcfileloc  "cgraph.h" 324)
             nil )
            (!pair  "vecsize_int"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 325)
+            (!srcfileloc  "cgraph.h" 327)
             nil )
            (!pair  "vecsize_float"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 328)
+            (!srcfileloc  "cgraph.h" 330)
             nil )
            (!pair  "vecsize_mangle"
             (!type already_seen 28)
-            (!srcfileloc  "cgraph.h" 333)
+            (!srcfileloc  "cgraph.h" 335)
             nil )
            (!pair  "inbranch"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 337)
+            (!srcfileloc  "cgraph.h" 339)
             nil )
            (!pair  "cilk_elemental"
             (!type already_seen 9)
-            (!srcfileloc  "cgraph.h" 340)
+            (!srcfileloc  "cgraph.h" 342)
             nil )
            (!pair  "prev_clone"
             (!type already_seen 912)
-            (!srcfileloc  "cgraph.h" 343)
+            (!srcfileloc  "cgraph.h" 345)
             nil )
            (!pair  "next_clone"
             (!type already_seen 912)
-            (!srcfileloc  "cgraph.h" 343)
+            (!srcfileloc  "cgraph.h" 345)
             nil )
            (!pair  "origin"
             (!type already_seen 912)
-            (!srcfileloc  "cgraph.h" 346)
+            (!srcfileloc  "cgraph.h" 348)
             nil )
            (!pair  "args"
             (!type array 923 nil  gc_used "1" 
              (!type struct 924 nil  gc_used "cgraph_simd_clone_arg"
-              (!srcfileloc  "cgraph.h" 312)
+              (!srcfileloc  "cgraph.h" 314)
               (!fields 8 
                (!pair  "orig_arg"
                 (!type already_seen 5)
-                (!srcfileloc  "cgraph.h" 274)
+                (!srcfileloc  "cgraph.h" 276)
                 nil )
                (!pair  "orig_type"
                 (!type already_seen 5)
-                (!srcfileloc  "cgraph.h" 278)
+                (!srcfileloc  "cgraph.h" 280)
                 nil )
                (!pair  "vector_arg"
                 (!type already_seen 5)
-                (!srcfileloc  "cgraph.h" 286)
+                (!srcfileloc  "cgraph.h" 288)
                 nil )
                (!pair  "vector_type"
                 (!type already_seen 5)
-                (!srcfileloc  "cgraph.h" 289)
+                (!srcfileloc  "cgraph.h" 291)
                 nil )
                (!pair  "simd_array"
                 (!type already_seen 5)
-                (!srcfileloc  "cgraph.h" 298)
+                (!srcfileloc  "cgraph.h" 300)
                 nil )
                (!pair  "arg_type"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 302)
+                (!srcfileloc  "cgraph.h" 304)
                 nil )
                (!pair  "linear_step"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 308)
+                (!srcfileloc  "cgraph.h" 310)
                 nil )
                (!pair  "alignment"
                 (!type already_seen 9)
-                (!srcfileloc  "cgraph.h" 311)
+                (!srcfileloc  "cgraph.h" 313)
                 nil )
               )
               nil 511 nil nil )
             )
-            (!srcfileloc  "cgraph.h" 349)
+            (!srcfileloc  "cgraph.h" 351)
             (!options 
              (!option length string  "%h.nargs")
             )
@@ -16706,15 +16710,15 @@
           )
           nil 511 nil nil )
         )
-        (!srcfileloc  "cgraph.h" 382)
+        (!srcfileloc  "cgraph.h" 384)
         nil )
        (!pair  "simd_clones"
         (!type already_seen 912)
-        (!srcfileloc  "cgraph.h" 384)
+        (!srcfileloc  "cgraph.h" 386)
         nil )
        (!pair  "ipa_transforms_to_apply"
         (!type user_struct 925 nil  gc_unused "vec<ipa_opt_pass>"
-         (!srcfileloc  "cgraph.h" 389)
+         (!srcfileloc  "cgraph.h" 391)
          (!fields 1 
           (!pair  "ipa_opt_pass"
            (!type pointer 926 nil  gc_unused
@@ -16725,218 +16729,218 @@
              (!fields 0 )
              nil 511 nil nil )
            )
-           (!srcfileloc  "cgraph.h" 389)
+           (!srcfileloc  "cgraph.h" 391)
            nil )
          )
         )
-        (!srcfileloc  "cgraph.h" 389)
+        (!srcfileloc  "cgraph.h" 391)
         (!options 
          (!option skip string  "")
         )
        )
        (!pair  "local"
         (!type struct 928 nil  gc_used "cgraph_local_info"
-         (!srcfileloc  "cgraph.h" 217)
+         (!srcfileloc  "cgraph.h" 219)
          (!fields 5 
           (!pair  "local"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 202)
+           (!srcfileloc  "cgraph.h" 204)
            nil )
           (!pair  "versionable"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 205)
+           (!srcfileloc  "cgraph.h" 207)
            nil )
           (!pair  "can_change_signature"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 209)
+           (!srcfileloc  "cgraph.h" 211)
            nil )
           (!pair  "redefined_extern_inline"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 213)
+           (!srcfileloc  "cgraph.h" 215)
            nil )
           (!pair  "tm_may_enter_irr"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 216)
-           nil )
-         )
-         nil 511 nil nil )
-        (!srcfileloc  "cgraph.h" 391)
-        nil )
-       (!pair  "global"
-        (!type struct 929 nil  gc_used "cgraph_global_info"
-         (!srcfileloc  "cgraph.h" 226)
-         (!fields 1 
-          (!pair  "inlined_to"
-           (!type already_seen 912)
-           (!srcfileloc  "cgraph.h" 225)
-           nil )
-         )
-         nil 511 nil nil )
-        (!srcfileloc  "cgraph.h" 392)
-        nil )
-       (!pair  "rtl"
-        (!type struct 930 nil  gc_used "cgraph_rtl_info"
-         (!srcfileloc  "cgraph.h" 233)
-         (!fields 1 
-          (!pair  "preferred_incoming_stack_boundary"
-           (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 232)
+           (!srcfileloc  "cgraph.h" 218)
            nil )
          )
          nil 511 nil nil )
         (!srcfileloc  "cgraph.h" 393)
         nil )
+       (!pair  "global"
+        (!type struct 929 nil  gc_used "cgraph_global_info"
+         (!srcfileloc  "cgraph.h" 228)
+         (!fields 1 
+          (!pair  "inlined_to"
+           (!type already_seen 912)
+           (!srcfileloc  "cgraph.h" 227)
+           nil )
+         )
+         nil 511 nil nil )
+        (!srcfileloc  "cgraph.h" 394)
+        nil )
+       (!pair  "rtl"
+        (!type struct 930 nil  gc_used "cgraph_rtl_info"
+         (!srcfileloc  "cgraph.h" 235)
+         (!fields 1 
+          (!pair  "preferred_incoming_stack_boundary"
+           (!type already_seen 9)
+           (!srcfileloc  "cgraph.h" 234)
+           nil )
+         )
+         nil 511 nil nil )
+        (!srcfileloc  "cgraph.h" 395)
+        nil )
        (!pair  "clone"
         (!type struct 931 nil  gc_used "cgraph_clone_info"
-         (!srcfileloc  "cgraph.h" 257)
+         (!srcfileloc  "cgraph.h" 259)
          (!fields 3 
           (!pair  "tree_map"
            (!type pointer 932 nil  gc_used
             (!type user_struct 933 
              (!type already_seen 932)
              gc_pointed_to "vec<ipa_replace_map_p,va_gc>"
-             (!srcfileloc  "cgraph.h" 254)
+             (!srcfileloc  "cgraph.h" 256)
              (!fields 2 
               (!pair  "va_gc"
                (!type already_seen 3)
-               (!srcfileloc  "cgraph.h" 254)
+               (!srcfileloc  "cgraph.h" 256)
                nil )
               (!pair  "ipa_replace_map_p"
                (!type pointer 934 nil  gc_used
                 (!type struct 935 
                  (!type already_seen 934)
                  gc_pointed_to "ipa_replace_map"
-                 (!srcfileloc  "cgraph.h" 249)
+                 (!srcfileloc  "cgraph.h" 251)
                  (!fields 5 
                   (!pair  "old_tree"
                    (!type already_seen 5)
-                   (!srcfileloc  "cgraph.h" 240)
+                   (!srcfileloc  "cgraph.h" 242)
                    nil )
                   (!pair  "new_tree"
                    (!type already_seen 5)
-                   (!srcfileloc  "cgraph.h" 242)
+                   (!srcfileloc  "cgraph.h" 244)
                    nil )
                   (!pair  "parm_num"
                    (!type already_seen 9)
-                   (!srcfileloc  "cgraph.h" 244)
+                   (!srcfileloc  "cgraph.h" 246)
                    nil )
                   (!pair  "replace_p"
                    (!type already_seen 9)
-                   (!srcfileloc  "cgraph.h" 246)
+                   (!srcfileloc  "cgraph.h" 248)
                    nil )
                   (!pair  "ref_p"
                    (!type already_seen 9)
-                   (!srcfileloc  "cgraph.h" 248)
+                   (!srcfileloc  "cgraph.h" 250)
                    nil )
                  )
                  nil 511 nil nil )
                )
-               (!srcfileloc  "cgraph.h" 254)
+               (!srcfileloc  "cgraph.h" 256)
                nil )
              )
             )
            )
-           (!srcfileloc  "cgraph.h" 254)
+           (!srcfileloc  "cgraph.h" 256)
            nil )
           (!pair  "args_to_skip"
            (!type already_seen 120)
-           (!srcfileloc  "cgraph.h" 255)
+           (!srcfileloc  "cgraph.h" 257)
            nil )
           (!pair  "combined_args_to_skip"
            (!type already_seen 120)
-           (!srcfileloc  "cgraph.h" 256)
+           (!srcfileloc  "cgraph.h" 258)
            nil )
          )
          nil 511 nil nil )
-        (!srcfileloc  "cgraph.h" 394)
+        (!srcfileloc  "cgraph.h" 396)
         nil )
        (!pair  "thunk"
         (!type struct 936 nil  gc_used "cgraph_thunk_info"
-         (!srcfileloc  "cgraph.h" 194)
+         (!srcfileloc  "cgraph.h" 196)
          (!fields 6 
           (!pair  "fixed_offset"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 187)
+           (!srcfileloc  "cgraph.h" 189)
            nil )
           (!pair  "virtual_value"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 188)
+           (!srcfileloc  "cgraph.h" 190)
            nil )
           (!pair  "alias"
            (!type already_seen 5)
-           (!srcfileloc  "cgraph.h" 189)
+           (!srcfileloc  "cgraph.h" 191)
            nil )
           (!pair  "this_adjusting"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 190)
+           (!srcfileloc  "cgraph.h" 192)
            nil )
           (!pair  "virtual_offset_p"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 191)
+           (!srcfileloc  "cgraph.h" 193)
            nil )
           (!pair  "thunk_p"
            (!type already_seen 9)
-           (!srcfileloc  "cgraph.h" 193)
+           (!srcfileloc  "cgraph.h" 195)
            nil )
          )
          nil 511 nil nil )
-        (!srcfileloc  "cgraph.h" 395)
+        (!srcfileloc  "cgraph.h" 397)
         nil )
        (!pair  "count"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 398)
+        (!srcfileloc  "cgraph.h" 400)
         nil )
        (!pair  "count_materialization_scale"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 401)
+        (!srcfileloc  "cgraph.h" 403)
         nil )
        (!pair  "uid"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 403)
+        (!srcfileloc  "cgraph.h" 405)
         nil )
        (!pair  "profile_id"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 405)
+        (!srcfileloc  "cgraph.h" 407)
         nil )
        (!pair  "tp_first_run"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 407)
+        (!srcfileloc  "cgraph.h" 409)
         nil )
        (!pair  "used_as_abstract_origin"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 411)
+        (!srcfileloc  "cgraph.h" 413)
         nil )
        (!pair  "lowered"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 413)
+        (!srcfileloc  "cgraph.h" 415)
         nil )
        (!pair  "process"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 416)
+        (!srcfileloc  "cgraph.h" 418)
         nil )
        (!pair  "frequency"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 419)
+        (!srcfileloc  "cgraph.h" 421)
         nil )
        (!pair  "only_called_at_startup"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 421)
+        (!srcfileloc  "cgraph.h" 423)
         nil )
        (!pair  "only_called_at_exit"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 423)
+        (!srcfileloc  "cgraph.h" 425)
         nil )
        (!pair  "tm_clone"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 428)
+        (!srcfileloc  "cgraph.h" 430)
         nil )
        (!pair  "dispatcher_function"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 430)
+        (!srcfileloc  "cgraph.h" 432)
         nil )
        (!pair  "calls_comdat_local"
         (!type already_seen 9)
-        (!srcfileloc  "cgraph.h" 433)
+        (!srcfileloc  "cgraph.h" 435)
         nil )
       )
       (!options 
@@ -16948,8 +16952,8 @@
         (!type already_seen 937)
        )
        gc_pointed_to "symtab_node"
-       (!srcfileloc  "cgraph.h" 152)
-       (!fields 25 
+       (!srcfileloc  "cgraph.h" 154)
+       (!fields 26 
         (!pair  "type"
          (!type already_seen 9)
          (!srcfileloc  "cgraph.h" 54)
@@ -16994,45 +16998,49 @@
          (!type already_seen 9)
          (!srcfileloc  "cgraph.h" 93)
          nil )
+        (!pair  "body_removed"
+         (!type already_seen 9)
+         (!srcfileloc  "cgraph.h" 96)
+         nil )
         (!pair  "used_from_other_partition"
          (!type already_seen 9)
-         (!srcfileloc  "cgraph.h" 101)
+         (!srcfileloc  "cgraph.h" 103)
          nil )
         (!pair  "in_other_partition"
          (!type already_seen 9)
-         (!srcfileloc  "cgraph.h" 105)
+         (!srcfileloc  "cgraph.h" 107)
          nil )
         (!pair  "address_taken"
          (!type already_seen 9)
-         (!srcfileloc  "cgraph.h" 112)
+         (!srcfileloc  "cgraph.h" 114)
          nil )
         (!pair  "order"
          (!type already_seen 9)
-         (!srcfileloc  "cgraph.h" 116)
+         (!srcfileloc  "cgraph.h" 118)
          nil )
         (!pair  "decl"
          (!type already_seen 5)
-         (!srcfileloc  "cgraph.h" 119)
+         (!srcfileloc  "cgraph.h" 121)
          nil )
         (!pair  "next"
          (!type already_seen 938)
-         (!srcfileloc  "cgraph.h" 122)
+         (!srcfileloc  "cgraph.h" 124)
          nil )
         (!pair  "previous"
          (!type already_seen 938)
-         (!srcfileloc  "cgraph.h" 123)
+         (!srcfileloc  "cgraph.h" 125)
          nil )
         (!pair  "next_sharing_asm_name"
          (!type already_seen 938)
-         (!srcfileloc  "cgraph.h" 134)
+         (!srcfileloc  "cgraph.h" 136)
          nil )
         (!pair  "previous_sharing_asm_name"
          (!type already_seen 938)
-         (!srcfileloc  "cgraph.h" 135)
+         (!srcfileloc  "cgraph.h" 137)
          nil )
         (!pair  "same_comdat_group"
          (!type already_seen 938)
-         (!srcfileloc  "cgraph.h" 138)
+         (!srcfileloc  "cgraph.h" 140)
          nil )
         (!pair  "ref_list"
          (!type struct 939 nil  gc_used "ipa_ref_list"
@@ -17111,11 +17119,11 @@
            )
           )
           nil 511 nil nil )
-         (!srcfileloc  "cgraph.h" 141)
+         (!srcfileloc  "cgraph.h" 143)
          nil )
         (!pair  "alias_target"
          (!type already_seen 5)
-         (!srcfileloc  "cgraph.h" 146)
+         (!srcfileloc  "cgraph.h" 148)
          nil )
         (!pair  "lto_file_data"
          (!type pointer 945 
@@ -17217,11 +17225,11 @@
            )
            nil 511 nil nil )
          )
-         (!srcfileloc  "cgraph.h" 149)
+         (!srcfileloc  "cgraph.h" 151)
          nil )
         (!pair  "aux"
          (!type already_seen 10)
-         (!srcfileloc  "cgraph.h" 151)
+         (!srcfileloc  "cgraph.h" 153)
          (!options 
           (!option skip string  "")
          )
@@ -17692,7 +17700,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1013 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/config/arm/arm.c:29414"nil 
+ (!type struct 1013 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/config/arm/arm.c:29429"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -17700,7 +17708,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1015 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/config/arm/arm.c:22861"nil 
+ (!type struct 1015 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/config/arm/arm.c:22868"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -17719,11 +17727,11 @@
  
  (!type already_seen 1017)
  
- (!type struct 1018 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/config/arm/arm.c:2843"nil 
+ (!type struct 1018 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/config/arm/arm.c:2843"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1019 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/config/arm/arm.c:1849"nil 
+ (!type struct 1019 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/config/arm/arm.c:1849"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -17906,15 +17914,15 @@
   nil 511 nil nil )
  
  (!type struct 1057 nil  gc_unused "numbered_tree_d"
-  (!srcfileloc  "tree-dfa.c" 692)
+  (!srcfileloc  "tree-dfa.c" 703)
   (!fields 2 
    (!pair  "t"
     (!type already_seen 5)
-    (!srcfileloc  "tree-dfa.c" 690)
+    (!srcfileloc  "tree-dfa.c" 701)
     nil )
    (!pair  "num"
     (!type already_seen 9)
-    (!srcfileloc  "tree-dfa.c" 691)
+    (!srcfileloc  "tree-dfa.c" 702)
     nil )
   )
   nil 511 nil nil )
@@ -18057,7 +18065,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type union 1085 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/tree-eh.c:59"nil 
+ (!type union 1085 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/tree-eh.c:59"nil 
   (!fields 0 )
   nil 0 nil )
  
@@ -18548,19 +18556,19 @@
    (!pair  "args"
     (!type array 1118 nil  gc_used "1" 
      (!type struct 1119 nil  gc_used "phi_arg_d"
-      (!srcfileloc  "tree-core.h" 1191)
+      (!srcfileloc  "tree-core.h" 1194)
       (!fields 3 
        (!pair  "imm_use"
         (!type already_seen 510)
-        (!srcfileloc  "tree-core.h" 1188)
+        (!srcfileloc  "tree-core.h" 1191)
         nil )
        (!pair  "def"
         (!type already_seen 5)
-        (!srcfileloc  "tree-core.h" 1189)
+        (!srcfileloc  "tree-core.h" 1192)
         nil )
        (!pair  "locus"
         (!type already_seen 9)
-        (!srcfileloc  "tree-core.h" 1190)
+        (!srcfileloc  "tree-core.h" 1193)
         nil )
       )
       nil 511 nil nil )
@@ -18687,7 +18695,7 @@
     (!srcfileloc  "gimple.h" 274)
     nil )
    (!pair  "u"
-    (!type union 1126 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/gimple.h:277"
+    (!type union 1126 nil  gc_used "anonymous:../.././../gcc/gcc-UBER/gcc/gimple.h:277"
      (!srcfileloc  "gimple.h" 280)
      (!fields 2 
       (!pair  "fntype"
@@ -18792,11 +18800,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1134 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/varasm.c:4818"nil 
+ (!type struct 1134 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/varasm.c:4818"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1135 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/varasm.c:4574"nil 
+ (!type struct 1135 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/varasm.c:4574"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -18902,7 +18910,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type union 1154 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/mcf.c:344"nil 
+ (!type union 1154 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/mcf.c:344"nil 
   (!fields 0 )
   nil 0 nil )
  
@@ -19814,7 +19822,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1273 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/dwarf2cfi.c:218"nil 
+ (!type struct 1273 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/dwarf2cfi.c:218"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -19826,7 +19834,7 @@
   (!type pointer 1276 nil  gc_unused
    (!type already_seen 1275)
   )
-  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/dwarf2cfi.c:101"nil 
+  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/dwarf2cfi.c:101"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -20243,19 +20251,19 @@
    (!type already_seen 1329)
   )
   gc_pointed_to "constant_descriptor_tree"
-  (!srcfileloc  "cgraph.h" 1334)
+  (!srcfileloc  "cgraph.h" 1336)
   (!fields 3 
    (!pair  "rtl"
     (!type already_seen 136)
-    (!srcfileloc  "cgraph.h" 1325)
+    (!srcfileloc  "cgraph.h" 1327)
     nil )
    (!pair  "value"
     (!type already_seen 5)
-    (!srcfileloc  "cgraph.h" 1328)
+    (!srcfileloc  "cgraph.h" 1330)
     nil )
    (!pair  "hash"
     (!type already_seen 9)
-    (!srcfileloc  "cgraph.h" 1333)
+    (!srcfileloc  "cgraph.h" 1335)
     nil )
   )
   nil 511 nil nil )
@@ -20285,19 +20293,19 @@
    (!type already_seen 1336)
   )
   gc_pointed_to "asm_node"
-  (!srcfileloc  "cgraph.h" 655)
+  (!srcfileloc  "cgraph.h" 657)
   (!fields 3 
    (!pair  "next"
     (!type already_seen 1337)
-    (!srcfileloc  "cgraph.h" 650)
+    (!srcfileloc  "cgraph.h" 652)
     nil )
    (!pair  "asm_str"
     (!type already_seen 5)
-    (!srcfileloc  "cgraph.h" 652)
+    (!srcfileloc  "cgraph.h" 654)
     nil )
    (!pair  "order"
     (!type already_seen 9)
-    (!srcfileloc  "cgraph.h" 654)
+    (!srcfileloc  "cgraph.h" 656)
     nil )
   )
   nil 511 nil nil )
@@ -20333,23 +20341,23 @@
    (!type already_seen 1344)
   )
   gc_pointed_to "cgraph_function_version_info"
-  (!srcfileloc  "cgraph.h" 462)
+  (!srcfileloc  "cgraph.h" 464)
   (!fields 4 
    (!pair  "this_node"
     (!type already_seen 912)
-    (!srcfileloc  "cgraph.h" 443)
+    (!srcfileloc  "cgraph.h" 445)
     nil )
    (!pair  "prev"
     (!type already_seen 1345)
-    (!srcfileloc  "cgraph.h" 447)
+    (!srcfileloc  "cgraph.h" 449)
     nil )
    (!pair  "next"
     (!type already_seen 1345)
-    (!srcfileloc  "cgraph.h" 451)
+    (!srcfileloc  "cgraph.h" 453)
     nil )
    (!pair  "dispatcher_resolver"
     (!type already_seen 5)
-    (!srcfileloc  "cgraph.h" 461)
+    (!srcfileloc  "cgraph.h" 463)
     nil )
   )
   nil 511 nil nil )
@@ -20393,15 +20401,15 @@
    (!type already_seen 1346)
   )
   gc_pointed_to "varpool_node"
-  (!srcfileloc  "cgraph.h" 644)
+  (!srcfileloc  "cgraph.h" 646)
   (!fields 2 
    (!pair  "output"
     (!type already_seen 9)
-    (!srcfileloc  "cgraph.h" 639)
+    (!srcfileloc  "cgraph.h" 641)
     nil )
    (!pair  "dynamically_initialized"
     (!type already_seen 9)
-    (!srcfileloc  "cgraph.h" 643)
+    (!srcfileloc  "cgraph.h" 645)
     nil )
   )
   (!options 
@@ -21129,15 +21137,15 @@
    (!type already_seen 1389)
   )
   gc_pointed_to "vec<alias_pair,va_gc>"
-  (!srcfileloc  "tree-core.h" 1790)
+  (!srcfileloc  "tree-core.h" 1793)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 3)
-    (!srcfileloc  "tree-core.h" 1790)
+    (!srcfileloc  "tree-core.h" 1793)
     nil )
    (!pair  "alias_pair"
     (!type struct 1391 nil  gc_used "alias_pair"
-     (!srcfileloc  "tree-core.h" 1790)
+     (!srcfileloc  "tree-core.h" 1793)
      (!fields 2 
       (!pair  "decl"
        (!type already_seen 5)
@@ -21149,25 +21157,25 @@
        nil )
      )
      nil 511 nil nil )
-    (!srcfileloc  "tree-core.h" 1790)
+    (!srcfileloc  "tree-core.h" 1793)
     nil )
   )
  )
  
  (!type struct 1392 nil  gc_used "builtin_info_type"
-  (!srcfileloc  "tree-core.h" 1825)
+  (!srcfileloc  "tree-core.h" 1828)
   (!fields 2 
    (!pair  "decl"
     (!type array 1393 nil  gc_used "(int)END_BUILTINS" 
      (!type already_seen 5)
     )
-    (!srcfileloc  "tree-core.h" 1768)
+    (!srcfileloc  "tree-core.h" 1771)
     nil )
    (!pair  "implicit_p"
     (!type array 1394 nil  gc_used "(int)END_BUILTINS" 
      (!type already_seen 9)
     )
-    (!srcfileloc  "tree-core.h" 1769)
+    (!srcfileloc  "tree-core.h" 1772)
     nil )
   )
   nil 511 nil nil )
@@ -21185,15 +21193,15 @@
    (!type already_seen 1397)
   )
   gc_pointed_to "tree_vec_map"
-  (!srcfileloc  "tree-core.h" 1745)
+  (!srcfileloc  "tree-core.h" 1748)
   (!fields 2 
    (!pair  "base"
     (!type already_seen 858)
-    (!srcfileloc  "tree-core.h" 1743)
+    (!srcfileloc  "tree-core.h" 1746)
     nil )
    (!pair  "to"
     (!type already_seen 45)
-    (!srcfileloc  "tree-core.h" 1744)
+    (!srcfileloc  "tree-core.h" 1747)
     nil )
   )
   nil 511 nil nil )
@@ -21203,19 +21211,19 @@
    (!type already_seen 1399)
   )
   gc_pointed_to "tree_priority_map"
-  (!srcfileloc  "tree-core.h" 1739)
+  (!srcfileloc  "tree-core.h" 1742)
   (!fields 3 
    (!pair  "base"
     (!type already_seen 858)
-    (!srcfileloc  "tree-core.h" 1736)
+    (!srcfileloc  "tree-core.h" 1739)
     nil )
    (!pair  "init"
     (!type already_seen 9)
-    (!srcfileloc  "tree-core.h" 1737)
+    (!srcfileloc  "tree-core.h" 1740)
     nil )
    (!pair  "fini"
     (!type already_seen 9)
-    (!srcfileloc  "tree-core.h" 1738)
+    (!srcfileloc  "tree-core.h" 1741)
     nil )
   )
   nil 511 nil nil )
@@ -21225,15 +21233,15 @@
    (!type already_seen 1401)
   )
   gc_pointed_to "tree_int_map"
-  (!srcfileloc  "tree-core.h" 1732)
+  (!srcfileloc  "tree-core.h" 1735)
   (!fields 2 
    (!pair  "base"
     (!type already_seen 858)
-    (!srcfileloc  "tree-core.h" 1730)
+    (!srcfileloc  "tree-core.h" 1733)
     nil )
    (!pair  "to"
     (!type already_seen 9)
-    (!srcfileloc  "tree-core.h" 1731)
+    (!srcfileloc  "tree-core.h" 1734)
     nil )
   )
   nil 511 nil nil )
@@ -21243,15 +21251,15 @@
    (!type already_seen 1403)
   )
   gc_pointed_to "tree_decl_map"
-  (!srcfileloc  "tree-core.h" 1726)
+  (!srcfileloc  "tree-core.h" 1729)
   (!fields 2 
    (!pair  "base"
     (!type already_seen 858)
-    (!srcfileloc  "tree-core.h" 1724)
+    (!srcfileloc  "tree-core.h" 1727)
     nil )
    (!pair  "to"
     (!type already_seen 5)
-    (!srcfileloc  "tree-core.h" 1725)
+    (!srcfileloc  "tree-core.h" 1728)
     nil )
   )
   nil 511 nil nil )
@@ -21261,19 +21269,19 @@
    (!type already_seen 1405)
   )
   gc_pointed_to "tree_map"
-  (!srcfileloc  "tree-core.h" 1720)
+  (!srcfileloc  "tree-core.h" 1723)
   (!fields 3 
    (!pair  "base"
     (!type already_seen 858)
-    (!srcfileloc  "tree-core.h" 1717)
+    (!srcfileloc  "tree-core.h" 1720)
     nil )
    (!pair  "hash"
     (!type already_seen 9)
-    (!srcfileloc  "tree-core.h" 1718)
+    (!srcfileloc  "tree-core.h" 1721)
     nil )
    (!pair  "to"
     (!type already_seen 5)
-    (!srcfileloc  "tree-core.h" 1719)
+    (!srcfileloc  "tree-core.h" 1722)
     nil )
   )
   nil 511 nil nil )
@@ -21879,7 +21887,7 @@
  
  (!type already_seen 1323)
  
- (!type struct 1431 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/config/arm/arm.h:1577"nil 
+ (!type struct 1431 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/config/arm/arm.h:1577"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -21967,11 +21975,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1447 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/../libcpp/include/cpplib.h:999"nil 
+ (!type struct 1447 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/../libcpp/include/cpplib.h:999"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1448 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/../libcpp/include/cpplib.h:988"nil 
+ (!type struct 1448 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/../libcpp/include/cpplib.h:988"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -22025,7 +22033,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1457 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-trunk/build/objdir/../build/../gcc/gcc-4.9/gcc/../libcpp/include/line-map.h:627"nil 
+ (!type struct 1457 nil  gc_unused "anonymous:../.././../gcc/gcc-UBER/gcc/../libcpp/include/line-map.h:627"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -22387,55 +22395,55 @@
   nil )
  (!pair  "gfc_interface_mapping"
   (!type already_seen 651)
-  (!srcfileloc  "fortran/trans.h" 944)
+  (!srcfileloc  "fortran/trans.h" 945)
   nil )
  (!pair  "gfc_interface_sym_mapping"
   (!type already_seen 652)
-  (!srcfileloc  "fortran/trans.h" 929)
+  (!srcfileloc  "fortran/trans.h" 930)
   nil )
  (!pair  "gfc_powdecl_list"
   (!type already_seen 653)
-  (!srcfileloc  "fortran/trans.h" 719)
+  (!srcfileloc  "fortran/trans.h" 720)
   nil )
  (!pair  "gfc_wrapped_block"
   (!type already_seen 655)
-  (!srcfileloc  "fortran/trans.h" 339)
+  (!srcfileloc  "fortran/trans.h" 341)
   nil )
  (!pair  "gfc_saved_var"
   (!type already_seen 656)
-  (!srcfileloc  "fortran/trans.h" 326)
+  (!srcfileloc  "fortran/trans.h" 328)
   nil )
  (!pair  "gfc_loopinfo"
   (!type already_seen 657)
-  (!srcfileloc  "fortran/trans.h" 316)
+  (!srcfileloc  "fortran/trans.h" 318)
   nil )
  (!pair  "gfc_ss"
   (!type already_seen 658)
-  (!srcfileloc  "fortran/trans.h" 267)
+  (!srcfileloc  "fortran/trans.h" 269)
   nil )
  (!pair  "gfc_ss_info"
   (!type already_seen 659)
-  (!srcfileloc  "fortran/trans.h" 227)
+  (!srcfileloc  "fortran/trans.h" 229)
   nil )
  (!pair  "gfc_ss_type"
   (!type already_seen 9)
-  (!srcfileloc  "fortran/trans.h" 183)
+  (!srcfileloc  "fortran/trans.h" 185)
   nil )
  (!pair  "gfc_array_info"
   (!type already_seen 660)
-  (!srcfileloc  "fortran/trans.h" 138)
+  (!srcfileloc  "fortran/trans.h" 140)
   nil )
  (!pair  "gfc_coarray_type"
   (!type already_seen 9)
-  (!srcfileloc  "fortran/trans.h" 107)
+  (!srcfileloc  "fortran/trans.h" 109)
   nil )
  (!pair  "gfc_se"
   (!type already_seen 661)
-  (!srcfileloc  "fortran/trans.h" 95)
+  (!srcfileloc  "fortran/trans.h" 97)
   nil )
  (!pair  "stmtblock_t"
   (!type already_seen 662)
-  (!srcfileloc  "fortran/trans.h" 35)
+  (!srcfileloc  "fortran/trans.h" 37)
   nil )
  (!pair  "gfc_packed"
   (!type already_seen 9)
@@ -22495,11 +22503,11 @@
   nil )
  (!pair  "vec<tree_int,va_gc>"
   (!type already_seen 684)
-  (!srcfileloc  "cp/parser.c" 8664)
+  (!srcfileloc  "cp/parser.c" 8668)
   nil )
  (!pair  "tree_int"
   (!type already_seen 686)
-  (!srcfileloc  "cp/parser.c" 8663)
+  (!srcfileloc  "cp/parser.c" 8667)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 1469 nil  gc_unused "NUM_PREC_VALUES" 
@@ -22605,11 +22613,11 @@
   nil )
  (!pair  "constexpr_call"
   (!type already_seen 709)
-  (!srcfileloc  "cp/semantics.c" 8076)
+  (!srcfileloc  "cp/semantics.c" 8078)
   nil )
  (!pair  "constexpr_fundef"
   (!type already_seen 712)
-  (!srcfileloc  "cp/semantics.c" 7393)
+  (!srcfileloc  "cp/semantics.c" 7395)
   nil )
  (!pair  "vec<deferred_access,va_gc>"
   (!type already_seen 714)
@@ -22921,19 +22929,19 @@
   nil )
  (!pair  "pragma_ns_name"
   (!type already_seen 768)
-  (!srcfileloc  "c-family/c-pragma.c" 1165)
+  (!srcfileloc  "c-family/c-pragma.c" 1172)
   nil )
  (!pair  "opt_stack"
   (!type already_seen 769)
-  (!srcfileloc  "c-family/c-pragma.c" 895)
+  (!srcfileloc  "c-family/c-pragma.c" 902)
   nil )
  (!pair  "vec<pending_redefinition,va_gc>"
   (!type already_seen 771)
-  (!srcfileloc  "c-family/c-pragma.c" 426)
+  (!srcfileloc  "c-family/c-pragma.c" 433)
   nil )
  (!pair  "pending_redefinition"
   (!type already_seen 773)
-  (!srcfileloc  "c-family/c-pragma.c" 423)
+  (!srcfileloc  "c-family/c-pragma.c" 430)
   nil )
  (!pair  "vec<pending_weak,va_gc>"
   (!type already_seen 774)
@@ -22997,11 +23005,11 @@
   nil )
  (!pair  "vec<tree_gc_vec,va_gc>"
   (!type already_seen 788)
-  (!srcfileloc  "c-family/c-common.c" 11539)
+  (!srcfileloc  "c-family/c-common.c" 11540)
   nil )
  (!pair  "tree_gc_vec"
   (!type already_seen 45)
-  (!srcfileloc  "c-family/c-common.c" 11538)
+  (!srcfileloc  "c-family/c-common.c" 11539)
   nil )
  (!pair  "vec<const_char_p,va_gc>"
   (!type already_seen 791)
@@ -23137,23 +23145,23 @@
   nil )
  (!pair  "inline_edge_summary_t"
   (!type already_seen 1300)
-  (!srcfileloc  "ipa-inline.h" 194)
+  (!srcfileloc  "ipa-inline.h" 196)
   nil )
  (!pair  "vec<inline_summary_t,va_gc>"
   (!type already_seen 873)
-  (!srcfileloc  "ipa-inline.h" 162)
+  (!srcfileloc  "ipa-inline.h" 164)
   nil )
  (!pair  "inline_summary_t"
   (!type already_seen 875)
-  (!srcfileloc  "ipa-inline.h" 161)
+  (!srcfileloc  "ipa-inline.h" 163)
   nil )
  (!pair  "size_time_entry"
   (!type already_seen 881)
-  (!srcfileloc  "ipa-inline.h" 139)
+  (!srcfileloc  "ipa-inline.h" 141)
   nil )
  (!pair  "vec<size_time_entry,va_gc>"
   (!type already_seen 880)
-  (!srcfileloc  "ipa-inline.h" 139)
+  (!srcfileloc  "ipa-inline.h" 141)
   nil )
  (!pair  "clause_t"
   (!type already_seen 9)
@@ -23301,23 +23309,23 @@
   nil )
  (!pair  "arm_mangle_map_entry"
   (!type already_seen 1013)
-  (!srcfileloc  "config/arm/arm.c" 29418)
+  (!srcfileloc  "config/arm/arm.c" 29433)
   nil )
  (!pair  "builtin_arg"
   (!type already_seen 9)
-  (!srcfileloc  "config/arm/arm.c" 24776)
+  (!srcfileloc  "config/arm/arm.c" 24783)
   nil )
  (!pair  "neon_builtin_datum"
   (!type already_seen 1015)
-  (!srcfileloc  "config/arm/arm.c" 22867)
+  (!srcfileloc  "config/arm/arm.c" 22874)
   nil )
  (!pair  "neon_itype"
   (!type already_seen 9)
-  (!srcfileloc  "config/arm/arm.c" 22859)
+  (!srcfileloc  "config/arm/arm.c" 22866)
   nil )
  (!pair  "neon_builtin_type_mode"
   (!type already_seen 9)
-  (!srcfileloc  "config/arm/arm.c" 22790)
+  (!srcfileloc  "config/arm/arm.c" 22797)
   nil )
  (!pair  "arm_pragma_enum"
   (!type already_seen 9)
@@ -23405,7 +23413,7 @@
   nil )
  (!pair  "numbered_tree"
   (!type already_seen 1057)
-  (!srcfileloc  "tree-dfa.c" 693)
+  (!srcfileloc  "tree-dfa.c" 704)
   nil )
  (!pair  "vec<mem_addr_template,va_gc>"
   (!type already_seen 1071)
@@ -23881,59 +23889,59 @@
   nil )
  (!pair  "cgraph_2node_hook"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 829)
+  (!srcfileloc  "cgraph.h" 831)
   nil )
  (!pair  "cgraph_2edge_hook"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 827)
+  (!srcfileloc  "cgraph.h" 829)
   nil )
  (!pair  "varpool_node_hook"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 825)
+  (!srcfileloc  "cgraph.h" 827)
   nil )
  (!pair  "cgraph_node_hook"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 824)
+  (!srcfileloc  "cgraph.h" 826)
   nil )
  (!pair  "cgraph_edge_hook"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 823)
+  (!srcfileloc  "cgraph.h" 825)
   nil )
  (!pair  "cgraph_edge_p"
   (!type already_seen 915)
-  (!srcfileloc  "cgraph.h" 630)
+  (!srcfileloc  "cgraph.h" 632)
   nil )
  (!pair  "varpool_node_set"
   (!type already_seen 1341)
-  (!srcfileloc  "cgraph.h" 504)
+  (!srcfileloc  "cgraph.h" 506)
   nil )
  (!pair  "cgraph_node_set"
   (!type already_seen 1343)
-  (!srcfileloc  "cgraph.h" 501)
+  (!srcfileloc  "cgraph.h" 503)
   nil )
  (!pair  "varpool_node_ptr"
   (!type already_seen 1347)
-  (!srcfileloc  "cgraph.h" 490)
+  (!srcfileloc  "cgraph.h" 492)
   nil )
  (!pair  "varpool_node"
   (!type already_seen 1346)
-  (!srcfileloc  "cgraph.h" 490)
+  (!srcfileloc  "cgraph.h" 492)
   nil )
  (!pair  "cgraph_node_ptr"
   (!type already_seen 912)
-  (!srcfileloc  "cgraph.h" 437)
+  (!srcfileloc  "cgraph.h" 439)
   nil )
  (!pair  "vec<ipa_opt_pass>"
   (!type already_seen 925)
-  (!srcfileloc  "cgraph.h" 389)
+  (!srcfileloc  "cgraph.h" 391)
   nil )
  (!pair  "vec<ipa_replace_map_p,va_gc>"
   (!type already_seen 933)
-  (!srcfileloc  "cgraph.h" 254)
+  (!srcfileloc  "cgraph.h" 256)
   nil )
  (!pair  "ipa_replace_map_p"
   (!type already_seen 934)
-  (!srcfileloc  "cgraph.h" 250)
+  (!srcfileloc  "cgraph.h" 252)
   nil )
  (!pair  "vec<ipa_ref_ptr>"
   (!type already_seen 944)
@@ -24051,31 +24059,31 @@
   nil )
  (!pair  "builtin_info_type"
   (!type already_seen 1392)
-  (!srcfileloc  "tree-core.h" 1825)
+  (!srcfileloc  "tree-core.h" 1828)
   nil )
  (!pair  "alias_pair"
   (!type already_seen 1391)
-  (!srcfileloc  "tree-core.h" 1790)
+  (!srcfileloc  "tree-core.h" 1793)
   nil )
  (!pair  "vec<alias_pair,va_gc>"
   (!type already_seen 1389)
-  (!srcfileloc  "tree-core.h" 1790)
+  (!srcfileloc  "tree-core.h" 1793)
   nil )
  (!pair  "record_layout_info"
   (!type already_seen 1409)
-  (!srcfileloc  "tree-core.h" 1702)
+  (!srcfileloc  "tree-core.h" 1705)
   nil )
  (!pair  "vec<tree,va_gc>"
   (!type already_seen 46)
-  (!srcfileloc  "tree-core.h" 1225)
+  (!srcfileloc  "tree-core.h" 1228)
   nil )
  (!pair  "constructor_elt"
   (!type already_seen 467)
-  (!srcfileloc  "tree-core.h" 1106)
+  (!srcfileloc  "tree-core.h" 1109)
   nil )
  (!pair  "vec<constructor_elt,va_gc>"
   (!type already_seen 466)
-  (!srcfileloc  "tree-core.h" 1106)
+  (!srcfileloc  "tree-core.h" 1109)
   nil )
  (!pair  "walk_tree_lh"
   (!type already_seen 9)
@@ -25074,18 +25082,18 @@
   nil )
  (!pair  "lto_eh_personality_decl"
   (!type already_seen 5)
-  (!srcfileloc  "lto/lto.c" 3315)
+  (!srcfileloc  "lto/lto.c" 3321)
   nil )
  (!pair  "real_file_decl_data"
   (!type already_seen 946)
-  (!srcfileloc  "lto/lto.c" 2882)
+  (!srcfileloc  "lto/lto.c" 2880)
   (!options 
    (!option length string  "real_file_count + 1")
   )
  )
  (!pair  "all_file_decl_data"
   (!type already_seen 946)
-  (!srcfileloc  "lto/lto.c" 2850)
+  (!srcfileloc  "lto/lto.c" 2848)
   (!options 
    (!option length string  "lto_stats.num_input_files + 1")
   )
@@ -25310,151 +25318,151 @@
   nil )
  (!pair  "gfor_fndecl_sr_kind"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 768)
+  (!srcfileloc  "fortran/trans.h" 769)
   nil )
  (!pair  "gfor_fndecl_si_kind"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 767)
+  (!srcfileloc  "fortran/trans.h" 768)
   nil )
  (!pair  "gfor_fndecl_sc_kind"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 766)
+  (!srcfileloc  "fortran/trans.h" 767)
   nil )
  (!pair  "gfor_fndecl_iargc"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 763)
+  (!srcfileloc  "fortran/trans.h" 764)
   nil )
  (!pair  "gfor_fndecl_size1"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 762)
+  (!srcfileloc  "fortran/trans.h" 763)
   nil )
  (!pair  "gfor_fndecl_size0"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 761)
+  (!srcfileloc  "fortran/trans.h" 762)
   nil )
  (!pair  "gfor_fndecl_convert_char4_to_char1"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 758)
+  (!srcfileloc  "fortran/trans.h" 759)
   nil )
  (!pair  "gfor_fndecl_convert_char1_to_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 757)
+  (!srcfileloc  "fortran/trans.h" 758)
   nil )
  (!pair  "gfor_fndecl_select_string_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 754)
+  (!srcfileloc  "fortran/trans.h" 755)
   nil )
  (!pair  "gfor_fndecl_adjustr_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 753)
+  (!srcfileloc  "fortran/trans.h" 754)
   nil )
  (!pair  "gfor_fndecl_adjustl_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 752)
+  (!srcfileloc  "fortran/trans.h" 753)
   nil )
  (!pair  "gfor_fndecl_string_minmax_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 751)
+  (!srcfileloc  "fortran/trans.h" 752)
   nil )
  (!pair  "gfor_fndecl_string_trim_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 750)
+  (!srcfileloc  "fortran/trans.h" 751)
   nil )
  (!pair  "gfor_fndecl_string_verify_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 749)
+  (!srcfileloc  "fortran/trans.h" 750)
   nil )
  (!pair  "gfor_fndecl_string_scan_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 748)
+  (!srcfileloc  "fortran/trans.h" 749)
   nil )
  (!pair  "gfor_fndecl_string_index_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 747)
+  (!srcfileloc  "fortran/trans.h" 748)
   nil )
  (!pair  "gfor_fndecl_string_len_trim_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 746)
+  (!srcfileloc  "fortran/trans.h" 747)
   nil )
  (!pair  "gfor_fndecl_concat_string_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 745)
+  (!srcfileloc  "fortran/trans.h" 746)
   nil )
  (!pair  "gfor_fndecl_compare_string_char4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 744)
+  (!srcfileloc  "fortran/trans.h" 745)
   nil )
  (!pair  "gfor_fndecl_select_string"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 743)
+  (!srcfileloc  "fortran/trans.h" 744)
   nil )
  (!pair  "gfor_fndecl_adjustr"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 742)
+  (!srcfileloc  "fortran/trans.h" 743)
   nil )
  (!pair  "gfor_fndecl_adjustl"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 741)
+  (!srcfileloc  "fortran/trans.h" 742)
   nil )
  (!pair  "gfor_fndecl_string_minmax"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 740)
+  (!srcfileloc  "fortran/trans.h" 741)
   nil )
  (!pair  "gfor_fndecl_string_trim"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 739)
+  (!srcfileloc  "fortran/trans.h" 740)
   nil )
  (!pair  "gfor_fndecl_string_verify"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 738)
+  (!srcfileloc  "fortran/trans.h" 739)
   nil )
  (!pair  "gfor_fndecl_string_scan"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 737)
+  (!srcfileloc  "fortran/trans.h" 738)
   nil )
  (!pair  "gfor_fndecl_string_index"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 736)
+  (!srcfileloc  "fortran/trans.h" 737)
   nil )
  (!pair  "gfor_fndecl_string_len_trim"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 735)
+  (!srcfileloc  "fortran/trans.h" 736)
   nil )
  (!pair  "gfor_fndecl_concat_string"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 734)
+  (!srcfileloc  "fortran/trans.h" 735)
   nil )
  (!pair  "gfor_fndecl_compare_string"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 733)
+  (!srcfileloc  "fortran/trans.h" 734)
   nil )
  (!pair  "gfor_fndecl_zgemm"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 730)
+  (!srcfileloc  "fortran/trans.h" 731)
   nil )
  (!pair  "gfor_fndecl_cgemm"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 729)
+  (!srcfileloc  "fortran/trans.h" 730)
   nil )
  (!pair  "gfor_fndecl_dgemm"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 728)
+  (!srcfileloc  "fortran/trans.h" 729)
   nil )
  (!pair  "gfor_fndecl_sgemm"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 727)
+  (!srcfileloc  "fortran/trans.h" 728)
   nil )
  (!pair  "gfor_fndecl_math_ishftc16"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 724)
+  (!srcfileloc  "fortran/trans.h" 725)
   nil )
  (!pair  "gfor_fndecl_math_ishftc8"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 723)
+  (!srcfileloc  "fortran/trans.h" 724)
   nil )
  (!pair  "gfor_fndecl_math_ishftc4"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 722)
+  (!srcfileloc  "fortran/trans.h" 723)
   nil )
  (!pair  "gfor_fndecl_math_powi"
   (!type array 1552 nil  gc_used "4" 
@@ -25462,139 +25470,139 @@
     (!type already_seen 653)
    )
   )
-  (!srcfileloc  "fortran/trans.h" 721)
+  (!srcfileloc  "fortran/trans.h" 722)
   nil )
  (!pair  "gfort_gvar_caf_this_image"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 708)
+  (!srcfileloc  "fortran/trans.h" 709)
   nil )
  (!pair  "gfort_gvar_caf_num_images"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 707)
+  (!srcfileloc  "fortran/trans.h" 708)
   nil )
  (!pair  "gfor_fndecl_caf_error_stop_str"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 704)
+  (!srcfileloc  "fortran/trans.h" 705)
   nil )
  (!pair  "gfor_fndecl_caf_error_stop"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 703)
+  (!srcfileloc  "fortran/trans.h" 704)
   nil )
  (!pair  "gfor_fndecl_caf_sync_images"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 702)
+  (!srcfileloc  "fortran/trans.h" 703)
   nil )
  (!pair  "gfor_fndecl_caf_sync_all"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 701)
+  (!srcfileloc  "fortran/trans.h" 702)
   nil )
  (!pair  "gfor_fndecl_caf_end_critical"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 700)
+  (!srcfileloc  "fortran/trans.h" 701)
   nil )
  (!pair  "gfor_fndecl_caf_critical"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 699)
+  (!srcfileloc  "fortran/trans.h" 700)
   nil )
  (!pair  "gfor_fndecl_caf_deregister"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 698)
+  (!srcfileloc  "fortran/trans.h" 699)
   nil )
  (!pair  "gfor_fndecl_caf_register"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 697)
+  (!srcfileloc  "fortran/trans.h" 698)
   nil )
  (!pair  "gfor_fndecl_caf_finalize"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 696)
+  (!srcfileloc  "fortran/trans.h" 697)
   nil )
  (!pair  "gfor_fndecl_caf_init"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 695)
+  (!srcfileloc  "fortran/trans.h" 696)
   nil )
  (!pair  "gfor_fndecl_associated"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 691)
+  (!srcfileloc  "fortran/trans.h" 692)
   nil )
  (!pair  "gfor_fndecl_in_unpack"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 690)
+  (!srcfileloc  "fortran/trans.h" 691)
   nil )
  (!pair  "gfor_fndecl_in_pack"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 689)
+  (!srcfileloc  "fortran/trans.h" 690)
   nil )
  (!pair  "gfor_fndecl_fdate"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 688)
+  (!srcfileloc  "fortran/trans.h" 689)
   nil )
  (!pair  "gfor_fndecl_ctime"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 687)
+  (!srcfileloc  "fortran/trans.h" 688)
   nil )
  (!pair  "gfor_fndecl_ttynam"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 686)
+  (!srcfileloc  "fortran/trans.h" 687)
   nil )
  (!pair  "gfor_fndecl_set_options"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 685)
+  (!srcfileloc  "fortran/trans.h" 686)
   nil )
  (!pair  "gfor_fndecl_set_fpe"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 684)
+  (!srcfileloc  "fortran/trans.h" 685)
   nil )
  (!pair  "gfor_fndecl_generate_error"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 683)
+  (!srcfileloc  "fortran/trans.h" 684)
   nil )
  (!pair  "gfor_fndecl_os_error"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 682)
+  (!srcfileloc  "fortran/trans.h" 683)
   nil )
  (!pair  "gfor_fndecl_runtime_warning_at"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 681)
+  (!srcfileloc  "fortran/trans.h" 682)
   nil )
  (!pair  "gfor_fndecl_runtime_error_at"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 680)
+  (!srcfileloc  "fortran/trans.h" 681)
   nil )
  (!pair  "gfor_fndecl_runtime_error"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 679)
+  (!srcfileloc  "fortran/trans.h" 680)
   nil )
  (!pair  "gfor_fndecl_error_stop_string"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 678)
+  (!srcfileloc  "fortran/trans.h" 679)
   nil )
  (!pair  "gfor_fndecl_error_stop_numeric"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 677)
+  (!srcfileloc  "fortran/trans.h" 678)
   nil )
  (!pair  "gfor_fndecl_stop_string"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 676)
+  (!srcfileloc  "fortran/trans.h" 677)
   nil )
  (!pair  "gfor_fndecl_stop_numeric_f08"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 675)
+  (!srcfileloc  "fortran/trans.h" 676)
   nil )
  (!pair  "gfor_fndecl_stop_numeric"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 674)
+  (!srcfileloc  "fortran/trans.h" 675)
   nil )
  (!pair  "gfor_fndecl_pause_string"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 673)
+  (!srcfileloc  "fortran/trans.h" 674)
   nil )
  (!pair  "gfor_fndecl_pause_numeric"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 672)
+  (!srcfileloc  "fortran/trans.h" 673)
   nil )
  (!pair  "gfc_static_ctors"
   (!type already_seen 5)
-  (!srcfileloc  "fortran/trans.h" 576)
+  (!srcfileloc  "fortran/trans.h" 578)
   nil )
  (!pair  "gfc_charlen_type_node"
   (!type already_seen 5)
@@ -25828,23 +25836,23 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 9)
-  (!srcfileloc  "cp/parser.c" 31922)
+  (!srcfileloc  "cp/parser.c" 31939)
   nil )
  (!pair  "the_parser"
   (!type already_seen 690)
-  (!srcfileloc  "cp/parser.c" 31345)
+  (!srcfileloc  "cp/parser.c" 31362)
   nil )
  (!pair  "lambda_scope_stack"
   (!type already_seen 685)
-  (!srcfileloc  "cp/parser.c" 8664)
+  (!srcfileloc  "cp/parser.c" 8668)
   nil )
  (!pair  "lambda_count"
   (!type already_seen 9)
-  (!srcfileloc  "cp/parser.c" 8658)
+  (!srcfileloc  "cp/parser.c" 8662)
   nil )
  (!pair  "lambda_scope"
   (!type already_seen 5)
-  (!srcfileloc  "cp/parser.c" 8657)
+  (!srcfileloc  "cp/parser.c" 8661)
   nil )
  (!pair  "cp_parser_context_free_list"
   (!type already_seen 696)
@@ -25873,7 +25881,7 @@
  )
  (!pair  "constexpr_call_table"
   (!type already_seen 1481)
-  (!srcfileloc  "cp/semantics.c" 8081)
+  (!srcfileloc  "cp/semantics.c" 8083)
   (!options 
    (!option param_is type 
     (!type already_seen 709)
@@ -25882,7 +25890,7 @@
  )
  (!pair  "constexpr_fundef_table"
   (!type already_seen 1483)
-  (!srcfileloc  "cp/semantics.c" 7398)
+  (!srcfileloc  "cp/semantics.c" 7400)
   (!options 
    (!option param_is type 
     (!type already_seen 712)
@@ -25903,7 +25911,7 @@
   nil )
  (!pair  "last_error_tinst_level"
   (!type already_seen 725)
-  (!srcfileloc  "cp/pt.c" 8201)
+  (!srcfileloc  "cp/pt.c" 8203)
   nil )
  (!pair  "canonical_template_parms"
   (!type already_seen 45)
@@ -26048,11 +26056,11 @@
   nil )
  (!pair  "lambda_cnt"
   (!type already_seen 9)
-  (!srcfileloc  "cp/name-lookup.c" 2084)
+  (!srcfileloc  "cp/name-lookup.c" 2088)
   nil )
  (!pair  "anon_cnt"
   (!type already_seen 9)
-  (!srcfileloc  "cp/name-lookup.c" 2065)
+  (!srcfileloc  "cp/name-lookup.c" 2069)
   nil )
  (!pair  "free_binding_level"
   (!type already_seen 94)
@@ -26081,15 +26089,15 @@
   nil )
  (!pair  "global_type_node"
   (!type already_seen 5)
-  (!srcfileloc  "cp/name-lookup.h" 279)
+  (!srcfileloc  "cp/name-lookup.h" 286)
   nil )
  (!pair  "global_scope_name"
   (!type already_seen 5)
-  (!srcfileloc  "cp/name-lookup.h" 274)
+  (!srcfileloc  "cp/name-lookup.h" 281)
   nil )
  (!pair  "global_namespace"
   (!type already_seen 5)
-  (!srcfileloc  "cp/name-lookup.h" 273)
+  (!srcfileloc  "cp/name-lookup.h" 280)
   nil )
  (!pair  "temp_count"
   (!type already_seen 9)
@@ -26128,11 +26136,11 @@
   nil )
  (!pair  "options_stack"
   (!type already_seen 770)
-  (!srcfileloc  "c-family/c-pragma.c" 897)
+  (!srcfileloc  "c-family/c-pragma.c" 904)
   nil )
  (!pair  "pending_redefine_extname"
   (!type already_seen 772)
-  (!srcfileloc  "c-family/c-pragma.c" 426)
+  (!srcfileloc  "c-family/c-pragma.c" 433)
   nil )
  (!pair  "pending_weaks"
   (!type already_seen 775)
@@ -26175,7 +26183,7 @@
  )
  (!pair  "tree_vector_cache"
   (!type already_seen 789)
-  (!srcfileloc  "c-family/c-common.c" 11539)
+  (!srcfileloc  "c-family/c-common.c" 11540)
   (!options 
    (!option deletable string  "")
   )
@@ -26255,7 +26263,7 @@
   nil )
  (!pair  "gnat_eh_personality_decl"
   (!type already_seen 5)
-  (!srcfileloc  "ada/gcc-interface/misc.c" 835)
+  (!srcfileloc  "ada/gcc-interface/misc.c" 834)
   nil )
  (!pair  "built_in_attributes"
   (!type array 1574 nil  gc_used "(int) ATTR_LAST" 
@@ -26438,7 +26446,7 @@
   nil )
  (!pair  "decl_tree_for_type"
   (!type already_seen 1491)
-  (!srcfileloc  "ubsan.c" 69)
+  (!srcfileloc  "ubsan.c" 70)
   (!options 
    (!option param_is type 
     (!type already_seen 856)
@@ -26466,7 +26474,7 @@
   nil )
  (!pair  "inline_summary_vec"
   (!type already_seen 874)
-  (!srcfileloc  "ipa-inline.h" 162)
+  (!srcfileloc  "ipa-inline.h" 164)
   nil )
  (!pair  "tm_wrap_map"
   (!type already_seen 1497)
@@ -26509,7 +26517,7 @@
   nil )
  (!pair  "clone_fn_id_num"
   (!type already_seen 9)
-  (!srcfileloc  "cgraphclones.c" 268)
+  (!srcfileloc  "cgraphclones.c" 272)
   nil )
  (!pair  "vtable_entry_type"
   (!type already_seen 5)
@@ -26530,7 +26538,7 @@
   (!type array 1584 nil  gc_used "ARM_BUILTIN_MAX" 
    (!type already_seen 5)
   )
-  (!srcfileloc  "config/arm/arm.c" 23248)
+  (!srcfileloc  "config/arm/arm.c" 23255)
   nil )
  (!pair  "tls_get_addr_libfunc"
   (!type already_seen 136)
@@ -26554,7 +26562,7 @@
   nil )
  (!pair  "critical_name_mutexes"
   (!type already_seen 1493)
-  (!srcfileloc  "omp-low.c" 8779)
+  (!srcfileloc  "omp-low.c" 8781)
   (!options 
    (!option param2_is type 
     (!type already_seen 5)
@@ -26875,7 +26883,7 @@
   nil )
  (!pair  "libfunc_decls"
   (!type already_seen 53)
-  (!srcfileloc  "optabs.c" 6018)
+  (!srcfileloc  "optabs.c" 6055)
   (!options 
    (!option param_is type 
     (!type already_seen 7)
@@ -26960,7 +26968,7 @@
   nil )
  (!pair  "block_clear_fn"
   (!type already_seen 5)
-  (!srcfileloc  "expr.h" 297)
+  (!srcfileloc  "expr.h" 299)
   nil )
  (!pair  "block_move_fn"
   (!type already_seen 5)
@@ -27454,11 +27462,11 @@
  )
  (!pair  "version_info_node"
   (!type already_seen 1345)
-  (!srcfileloc  "cgraph.c" 172)
+  (!srcfileloc  "cgraph.c" 174)
   nil )
  (!pair  "cgraph_fnver_htab"
   (!type already_seen 1533)
-  (!srcfileloc  "cgraph.c" 148)
+  (!srcfileloc  "cgraph.c" 150)
   (!options 
    (!option param_is type 
     (!type already_seen 1344)
@@ -27467,11 +27475,11 @@
  )
  (!pair  "free_edges"
   (!type already_seen 915)
-  (!srcfileloc  "cgraph.c" 138)
+  (!srcfileloc  "cgraph.c" 140)
   nil )
  (!pair  "free_nodes"
   (!type already_seen 912)
-  (!srcfileloc  "cgraph.c" 135)
+  (!srcfileloc  "cgraph.c" 137)
   nil )
  (!pair  "callmem"
   (!type already_seen 136)
@@ -27559,27 +27567,27 @@
   nil )
  (!pair  "symtab_order"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 704)
+  (!srcfileloc  "cgraph.h" 706)
   nil )
  (!pair  "asm_nodes"
   (!type already_seen 1337)
-  (!srcfileloc  "cgraph.h" 703)
+  (!srcfileloc  "cgraph.h" 705)
   nil )
  (!pair  "cgraph_edge_max_uid"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 680)
+  (!srcfileloc  "cgraph.h" 682)
   nil )
  (!pair  "cgraph_max_uid"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 679)
+  (!srcfileloc  "cgraph.h" 681)
   nil )
  (!pair  "cgraph_n_nodes"
   (!type already_seen 9)
-  (!srcfileloc  "cgraph.h" 678)
+  (!srcfileloc  "cgraph.h" 680)
   nil )
  (!pair  "symtab_nodes"
   (!type already_seen 938)
-  (!srcfileloc  "cgraph.h" 677)
+  (!srcfileloc  "cgraph.h" 679)
   nil )
  (!pair  "in_cold_section_p"
   (!type already_seen 9)
@@ -27679,41 +27687,41 @@
   nil )
  (!pair  "current_function_func_begin_label"
   (!type already_seen 36)
-  (!srcfileloc  "tree-core.h" 1838)
+  (!srcfileloc  "tree-core.h" 1841)
   nil )
  (!pair  "current_function_decl"
   (!type already_seen 5)
-  (!srcfileloc  "tree-core.h" 1835)
+  (!srcfileloc  "tree-core.h" 1838)
   nil )
  (!pair  "builtin_info"
   (!type already_seen 1392)
-  (!srcfileloc  "tree-core.h" 1825)
+  (!srcfileloc  "tree-core.h" 1828)
   nil )
  (!pair  "sizetype_tab"
   (!type array 1588 nil  gc_used "(int) stk_type_kind_last" 
    (!type already_seen 5)
   )
-  (!srcfileloc  "tree-core.h" 1813)
+  (!srcfileloc  "tree-core.h" 1816)
   nil )
  (!pair  "integer_types"
   (!type array 1589 nil  gc_used "itk_none" 
    (!type already_seen 5)
   )
-  (!srcfileloc  "tree-core.h" 1810)
+  (!srcfileloc  "tree-core.h" 1813)
   nil )
  (!pair  "global_trees"
   (!type array 1590 nil  gc_used "TI_MAX" 
    (!type already_seen 5)
   )
-  (!srcfileloc  "tree-core.h" 1806)
+  (!srcfileloc  "tree-core.h" 1809)
   nil )
  (!pair  "all_translation_units"
   (!type already_seen 45)
-  (!srcfileloc  "tree-core.h" 1803)
+  (!srcfileloc  "tree-core.h" 1806)
   nil )
  (!pair  "alias_pairs"
   (!type already_seen 1390)
-  (!srcfileloc  "tree-core.h" 1790)
+  (!srcfileloc  "tree-core.h" 1793)
   nil )
  (!pair  "stack_limit_rtx"
   (!type already_seen 136)

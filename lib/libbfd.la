@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/tmp/android-toolchain-eabi/lib'
+libdir='/home/cl3kener/tmp/linaro-arm-eabi-4.9/lib'

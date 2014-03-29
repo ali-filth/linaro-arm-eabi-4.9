@@ -1051,7 +1051,7 @@
 
 /* Define if your assembler supports @gnu_unique_object. */
 #ifndef USED_FOR_TARGET
-/* #undef HAVE_GAS_GNU_UNIQUE_OBJECT */
+#define HAVE_GAS_GNU_UNIQUE_OBJECT 1
 #endif
 
 
@@ -1658,7 +1658,7 @@
 
 /* Define if cloog is in use. */
 #ifndef USED_FOR_TARGET
-/* #undef HAVE_cloog */
+#define HAVE_cloog 1
 #endif
 
 
