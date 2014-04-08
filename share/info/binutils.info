@@ -43,7 +43,7 @@ Introduction
 ************
 
 This brief manual contains documentation for the GNU binary utilities
-(Linux/GNU Binutils) version 2.23.52.0.2:
+(UBER-Linaro-4.9.0_arm+graphite) version 2.23.52.0.2:
 
    This document is distributed under the terms of the GNU Free
 Documentation License version 1.3.  A copy of the license is included in
@@ -4811,34 +4811,34 @@ Binutils Index
 
 Tag Table:
 Node: Top1893
-Node: ar3616
-Node: ar cmdline6750
-Node: ar scripts16956
-Node: nm22642
-Node: objcopy32463
-Node: objdump64011
-Node: ranlib85993
-Node: size87506
-Node: strings90482
-Node: strip92911
-Node: c++filt100059
-Ref: c++filt-Footnote-1104873
-Node: addr2line104979
-Node: nlmconv109274
-Node: windmc111853
-Node: windres115510
-Node: dlltool121869
-Node: def file format134639
-Node: readelf137169
-Node: elfedit144614
-Node: Common Options146848
-Node: Selecting the Target System147882
-Node: Target Selection148814
-Node: Architecture Selection150795
-Node: Reporting Bugs151623
-Node: Bug Criteria152402
-Node: Bug Reporting152955
-Node: GNU Free Documentation License159856
-Node: Binutils Index185015
+Node: ar3628
+Node: ar cmdline6762
+Node: ar scripts16968
+Node: nm22654
+Node: objcopy32475
+Node: objdump64023
+Node: ranlib86005
+Node: size87518
+Node: strings90494
+Node: strip92923
+Node: c++filt100071
+Ref: c++filt-Footnote-1104885
+Node: addr2line104991
+Node: nlmconv109286
+Node: windmc111865
+Node: windres115522
+Node: dlltool121881
+Node: def file format134651
+Node: readelf137181
+Node: elfedit144626
+Node: Common Options146860
+Node: Selecting the Target System147894
+Node: Target Selection148826
+Node: Architecture Selection150807
+Node: Reporting Bugs151635
+Node: Bug Criteria152414
+Node: Bug Reporting152967
+Node: GNU Free Documentation License159868
+Node: Binutils Index185027
 
 End Tag Table

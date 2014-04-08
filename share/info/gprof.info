@@ -28,7 +28,8 @@ to determine which parts of a program are taking most of the execution
 time.  We assume that you know how to write, compile, and execute
 programs.  GNU 'gprof' was written by Jay Fenlason.
 
-   This manual is for 'gprof' (Linux/GNU Binutils) version 2.23.52.0.2.
+   This manual is for 'gprof' (UBER-Linaro-4.9.0_arm+graphite) version
+2.23.52.0.2.
 
    This document is distributed under the terms of the GNU Free
 Documentation License version 1.3.  A copy of the license is included in
@@ -2417,34 +2418,34 @@ their use in free software.
 
 Tag Table:
 Node: Top774
-Node: Introduction2110
-Node: Compiling4601
-Node: Executing8657
-Node: Invoking11445
-Node: Output Options12860
-Node: Analysis Options19951
-Node: Miscellaneous Options23650
-Node: Deprecated Options24904
-Node: Symspecs26967
-Node: Output28793
-Node: Flat Profile29833
-Node: Call Graph34786
-Node: Primary38018
-Node: Callers40606
-Node: Subroutines42724
-Node: Cycles44565
-Node: Line-by-line51342
-Node: Annotated Source55416
-Node: Inaccuracy58413
-Node: Sampling Error58671
-Node: Assumptions61575
-Node: How do I?63045
-Node: Incompatibilities64602
-Node: Details66096
-Node: Implementation66489
-Node: File Format72388
-Node: Internals76676
-Node: Debugging85166
-Node: GNU Free Documentation License86756
+Node: Introduction2122
+Node: Compiling4613
+Node: Executing8669
+Node: Invoking11457
+Node: Output Options12872
+Node: Analysis Options19963
+Node: Miscellaneous Options23662
+Node: Deprecated Options24916
+Node: Symspecs26979
+Node: Output28805
+Node: Flat Profile29845
+Node: Call Graph34798
+Node: Primary38030
+Node: Callers40618
+Node: Subroutines42736
+Node: Cycles44577
+Node: Line-by-line51354
+Node: Annotated Source55428
+Node: Inaccuracy58425
+Node: Sampling Error58683
+Node: Assumptions61587
+Node: How do I?63057
+Node: Incompatibilities64614
+Node: Details66108
+Node: Implementation66501
+Node: File Format72400
+Node: Internals76688
+Node: Debugging85178
+Node: GNU Free Documentation License86768
 
 End Tag Table
